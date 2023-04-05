@@ -1,4 +1,6 @@
 import * as React from "react";
+import Education from "../pages/education";
+import Experience from "../pages/experience";
 
 export function App() {
 
@@ -7,7 +9,8 @@ export function App() {
   
   return (
     <div>
-
+      <Experience/>
+      <Education/>
     </div>
   )
 }

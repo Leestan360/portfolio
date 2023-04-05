@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    #parent:hover #child {
+        @apply bg-gradient-to-r from-blue-500 to-purple-600;
+    }
+}
