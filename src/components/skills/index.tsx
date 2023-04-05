@@ -2,11 +2,11 @@ import * as React from "react";
 
 function Skills() {
   return (
-    <div className="px-20 flex justify-between">
-      <img src="" alt="image2" className="w-[50%]"></img>
-      <div className="w-[50%]">
+    <div className="px-20 flex justify-between py-5">
+      <img src="/homeImage.png" alt="image2" className="w-[48%]"></img>
+      <div className="w-[48%]">
         <p className="text-[3rem]">What I do</p>
-        <ul className="list-disc pb-5">
+        <ul className="list-disc pb-5 px-5">
           <li>
             Develop highly interactive Front end / User Interfaces for your web
             and mobile applications
