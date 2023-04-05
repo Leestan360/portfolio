@@ -1,4 +1,5 @@
 import * as React from "react";
+import HomePage from "../pages/home/HomePage";
 
 export function App() {
 
@@ -7,7 +8,7 @@ export function App() {
   
   return (
     <div>
-
+      <HomePage />
     </div>
   )
 }
