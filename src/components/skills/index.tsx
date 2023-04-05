@@ -2,7 +2,7 @@ import * as React from "react";
 
 function Skills() {
   return (
-    <div className="px-28 flex justify-between">
+    <div className="px-20 flex justify-between">
       <img src="" alt="image2" className="w-[50%]" ></img>
       <div className="w-[50%]">
         <p>What I do</p>
