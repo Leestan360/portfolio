@@ -1,6 +1,8 @@
 import * as React from "react";
 import HomePage from "../pages/home/HomePage";
 import Skills from "./skills";
+import Education from "../pages/education";
+import Experience from "../pages/experience";
 
 export function App() {
 
@@ -11,6 +13,8 @@ export function App() {
     <div>
       <HomePage />
       <Skills />
+      <Experience/>
+      <Education/>
     </div>
   )
 }
