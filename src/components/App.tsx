@@ -1,4 +1,6 @@
 import * as React from "react";
+import HomePage from "../pages/home/HomePage";
+import Skills from "./skills";
 
 export function App() {
 
@@ -7,7 +9,8 @@ export function App() {
   
   return (
     <div>
-
+      <HomePage />
+      <Skills />
     </div>
   )
 }
