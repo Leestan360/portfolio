@@ -9,11 +9,12 @@ type Props = {
 }
 
 const EducationCard = ({key, school}: Props) => {
+  // const sty = "rounded-xl bg-white p-4 ring ring-blue-50 sm:p-6 lg:p-8"
   return (
     <div 
     key={key} 
     id="parent" 
-    className="relative block overflow-hidden rounded-lg border border-gray-200 p-4 sm:p-6 lg:p-8">
+    className="relative block overflow-hidden bg-white rounded-xl ring ring-blue-50 p-4 sm:p-6 lg:p-8">
   <span 
   id="child"
   className="absolute inset-x-0 bottom-0 h-2"></span>

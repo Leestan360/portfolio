@@ -3,6 +3,8 @@ import HomePage from "../pages/home/HomePage";
 import Skills from "./skills";
 import Education from "../pages/education";
 import Experience from "../pages/experience";
+import Footer from "../pages/footer";
+import Blog from "../pages/blog";
 
 export function App() {
 
@@ -15,6 +17,8 @@ export function App() {
       <Skills />
       <Experience/>
       <Education/>
+      <Blog/>
+      <Footer/>
     </div>
   )
 }

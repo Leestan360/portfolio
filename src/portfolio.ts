@@ -1,3 +1,6 @@
+const headLine = {
+  text: "Fullstack Machine Learning/Data Engineer | Python | DataOps | MLOps"
+}
 const workInfo = {
   display: true, //Set it to true to show workExperiences Section
   experiences: [
@@ -78,4 +81,35 @@ const educationInfo = {
 };
 
 
-export {educationInfo, workInfo};
+// Blogs Section
+
+const blogInfo = {
+  title: "Blogs",
+  subtitle:
+    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
+  displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
+  blogs: [
+    {
+      url: "https://medium.com/bb-tutorials-and-thoughts/how-to-get-started-with-react-typescript-version-749e7b3b16ab",
+      title: "How To Get Started With React — Typescript Version",
+      description:
+        "React is a javascript library for web applications. You can build features quickly with simple, declarative templates."
+    },
+    {
+      url: "https://betterprogramming.pub/how-to-create-and-publish-react-typescript-npm-package-with-demo-and-automated-build-80c40ec28aca",
+      title: "How to Create and Publish React TypeScript npm Package With Demo and Automated Build",
+      description:
+        "Learn to create amazing projects from scratch"
+    },
+    {
+      url: "https://betterprogramming.pub/how-to-create-and-publish-react-typescript-npm-package-with-demo-and-automated-build-80c40ec28aca",
+      title: "How to Create and Publish React TypeScript npm Package With Demo and Automated Build",
+      description:
+        "Learn to create amazing projects from scratch"
+    }
+  ],
+  display: true // Set false to hide this section, defaults to true
+};
+
+
+export {headLine, educationInfo, workInfo, blogInfo};

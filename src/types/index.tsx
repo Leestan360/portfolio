@@ -16,3 +16,9 @@ export interface  WorkType {
     stack: Array<string>;
     descBullets?: Array<string> | any;
 }
+
+export interface BlogType {
+    url: string;
+    title: string;
+    description: string;
+}
