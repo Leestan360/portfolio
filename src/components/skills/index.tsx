@@ -2,23 +2,23 @@ import * as React from "react";
 
 function Skills() {
   return (
-    <div id="skills" className="px-20 flex justify-between py-5">
-      <img src="/homeImage.png" alt="image2" className="w-[48%]"></img>
+    <div id="skills" className="px-20 flex justify-between py-5 h-screen">
+      <img src="/homeImage.png" alt="image2" className="w-[48%] h-[63%]"></img>
       <div className="w-[48%]">
-        <p className="text-[3rem]">What I do</p>
-        <ul className="list-disc pb-5 px-5">
-          <li>
+        <p className="text-[3.3rem]">What I do</p>
+        <ul className="list-disc pb-5 px-5 text-2xl">
+          <li className="py-1">
             Develop highly interactive Front end / User Interfaces for your web
             and mobile applications
           </li>
-          <li>Progressive Web Applications (PWA) in normal and SPA Stacks</li>
-          <li>
+          <li className="py-1">Progressive Web Applications (PWA) in normal and SPA Stacks</li>
+          <li className="py-1">
             Integration of third party services such as Firebase/ AWS / Digital
             Ocean
           </li>
         </ul>
         <p className="text-[3rem]">What I use</p>
-        <div className="grid grid-cols-7 justify-center py-3">
+        <div className="grid grid-cols-7 justify-center py-3 gap-5">
           <div className="text-center">
             <i className="fa-brands fa-html5 fa-2x"></i>
             <p>html5</p>

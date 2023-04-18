@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 function Home() {
   return (
-    <div className="flex px-20 pt-28 justify-between">
-      <div className="w-[48%]">
+    <div className="flex px-20 pt-28 justify-center">
+      <div className="w-[48%] text-center">
         <h3 className="text-[3.8rem] font-[700px]">Hi all, I'm Stanley</h3>
         <p className="py-8 text-[1.5rem]">
           A passionate Full Stack Software Developer having an experience of
@@ -23,11 +23,11 @@ function Home() {
           </Link>
         </div>
         <div className="py-8">
-          <Link to="" className="border border-purple-500 bg-purple-800 text-white hover:bg-white hover:text-purple-800 px-5 py-3 rounded-[5px]  ">CONTACT ME</Link>
+          <a href="tel:+254702425434" className="border border-purple-500 bg-purple-800 text-white hover:bg-white hover:text-purple-800 px-5 py-3 rounded-[5px]  ">CONTACT ME</a>
           <Link to="" className="border border-purple-500 bg-purple-800 text-white hover:bg-white hover:text-purple-800 px-5 py-3 rounded-[5px] mx-10 ">MY RESUME</Link>
         </div>
       </div>
-      <img src="/homeImage.png" alt="image1" className="w-[48%]" />
+      {/* <img src="/homeImage.png" alt="image1" className="w-[48%]" /> */}
     </div>
   );
 }
