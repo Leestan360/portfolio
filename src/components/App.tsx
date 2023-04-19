@@ -3,23 +3,27 @@ import HomePage from "../pages/home/HomePage";
 import Skills from "./skills";
 import Education from "../pages/education";
 import Experience from "../pages/experience";
-import ProjectsCard from "./projects";
+// import ProjectsCard from "./projects";
 import Achievements from "./achievements";
 import Footer from "../pages/footer";
 import Blog from "../pages/blog";
+import Projects from "./projects/Projects";
+import BigProjects from "./projects/BigProjects";
 
 
 export function App() {
 
   // const [toggle, setToggle] = React.useState(false)
+  // bg-[#171c28]
   
   return (
-    <div>
+    <div className="px-32">
       <HomePage />
       <Skills />
       <Experience/>
       <Education/>
-      <ProjectsCard/>
+      <Projects />
+      <BigProjects />
       <Achievements/>
       <Blog/>
       <Footer/>

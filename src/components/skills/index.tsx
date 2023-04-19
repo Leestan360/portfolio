@@ -2,54 +2,56 @@ import * as React from "react";
 
 function Skills() {
   return (
-    <div id="skills" className="px-20 flex justify-between py-5 h-screen">
-      <img src="/homeImage.png" alt="image2" className="w-[48%] h-[63%]"></img>
+    <div id="skills" className="flex justify-between">
+      <img src="/homeImage.png" alt="image2" className=""></img>
       <div className="w-[48%]">
-        <p className="text-[3.3rem]">What I do</p>
-        <ul className="list-disc pb-5 px-5 text-2xl">
+        <p className="text-4xl  text-center  font-[500] ">What I do</p>
+        <ul className="list-disc pb-10 py-1 px-5 text-[1.5rem] ">
           <li className="py-1">
             Develop highly interactive Front end / User Interfaces for your web
             and mobile applications
           </li>
-          <li className="py-1">Progressive Web Applications (PWA) in normal and SPA Stacks</li>
+          <li className="py-1">
+            Progressive Web Applications (PWA) in normal and SPA Stacks
+          </li>
           <li className="py-1">
             Integration of third party services such as Firebase/ AWS / Digital
             Ocean
           </li>
         </ul>
-        <p className="text-[3rem]">What I use</p>
-        <div className="grid grid-cols-7 justify-center py-3 gap-5">
-          <div className="text-center">
-            <i className="fa-brands fa-html5 fa-2x"></i>
-            <p>html5</p>
+        <p className="text-4xl text-center font-[500]">What I use</p>
+        <div className="flex flex-wrap justify-center py-3 gap-x-8 gap-y-5 ">
+          <div className="text-center cursor-pointer ">
+            <i className="fa-brands fa-html5 fa-3x"></i>
+            <p className="text-[0.8rem]">html5</p>
           </div>
-          <div className="text-center">
-            <i className="fa-brands fa-css3 fa-2x"></i>
-            <p>css3</p>
+          <div className="text-center cursor-pointer">
+            <i className="fa-brands fa-css3 fa-3x"></i>
+            <p className="text-[0.8rem]">css3</p>
           </div>
-          <div className="text-center">
-            <i className="fa-brands fa-js fa-2x"></i>
-            <p>JavaScript</p>
+          <div className="text-center cursor-pointer">
+            <i className="fa-brands fa-js fa-3x"></i>
+            <p className="text-[0.8rem]">JavaScript</p>
           </div>
-          <div className="text-center">
-            <i className="fa-brands fa-python fa-2x"></i>
-            <p>python</p>
+          <div className="text-center cursor-pointer">
+            <i className="fa-brands fa-python fa-3x"></i>
+            <p className="text-[0.8rem]">python</p>
           </div>
-          <div className="text-center">
-            <i className="fa-brands fa-react fa-2x"></i>
-            <p>reactjs</p>
+          <div className="text-center cursor-pointer">
+            <i className="fa-brands fa-react fa-3x"></i>
+            <p className="text-[0.8rem]">reactjs</p>
           </div>
-          <div className="text-center">
-            <i className="fa-brands fa-docker fa-2x"></i>
-            <p>docker</p>
+          <div className="text-center cursor-pointer">
+            <i className="fa-brands fa-docker fa-3x"></i>
+            <p className="text-[0.8rem]">docker</p>
           </div>
-          <div className="text-center">
-            <i className="fa-brands fa-node fa-2x"></i>
-            <p>nodejs</p>
+          <div className="text-center cursor-pointer">
+            <i className="fa-brands fa-node fa-3x"></i>
+            <p className="text-[0.8rem]">nodejs</p>
           </div>
-          <div className="text-center">
-            <i className="fa-brands fa-aws fa-2x"></i>
-            <p>aws</p>
+          <div className="text-center cursor-pointer">
+            <i className="fa-brands fa-aws fa-3x"></i>
+            <p className="text-[0.8rem]">aws</p>
           </div>
         </div>
       </div>
