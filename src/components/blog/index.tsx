@@ -8,7 +8,7 @@ type Props = {
 
 const BlogCard = ({key, blog}: Props) => {
   return (
-    <article key={key} className="rounded-xl bg-white p-2 ring ring-blue-50 sm:p-6 lg:p-8">
+    <article key={key} className=" bg-white p-2 border border-gray-100 hover:shadow-xl rounded-[6px] shadow-lg  cursor-pointer sm:p-6 lg:p-8">
   <div className="flex items-start sm:gap-8">
     <div
       className="hidden sm:grid sm:h-10 sm:w-10 sm:shrink-0 sm:place-content-center sm:rounded-full sm:border sm:border-gray-700"

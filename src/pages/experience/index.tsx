@@ -4,9 +4,9 @@ import { workInfo } from '../../portfolio';
 
 
 const Experience = () => {
-    const experienceSectionStyle = "flex flex-col mt-4 mb-16"
-    const experienceHeaderStyle = "text-4xl font-normal px-12 md:mx-20"
-    const experienceCardContainerStyle = "flex flex-row justify-center pt-5 grid md:grid-cols-2 gap-9 px-12 md:mx-20"
+    const experienceSectionStyle = "flex flex-col my-24"
+    const experienceHeaderStyle = "text-4xl font-[500] "
+    const experienceCardContainerStyle = "flex flex-row justify-center pt-5 grid md:grid-cols-2 gap-9 "
   return (
     <section className={experienceSectionStyle} id="experience">
         <div className='w-auto'>
