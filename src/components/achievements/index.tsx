@@ -11,7 +11,7 @@ function Achievements() {
       </p>
       <div className="flex flex-wrap justify-between">
 
-        <div className="border border-gray-300 w-[32.5%] text-center rounded-lg py-8 px-4 my-6 shadow-lg hover:shadow-xl bg-white">
+        <div className="border border-gray-300 w-[32.5%] text-center rounded-lg py-8 px-4 my-6 shadow-lg hover:shadow-xl bg-white cursor-pointer">
           <p className="my-16">Icon</p>
           <p className="font-[400] text-[1.4rem] my-2">Google Code-In Finalist</p>
           <p className="my-4 text-gray-500">
@@ -41,7 +41,7 @@ function Achievements() {
         </div>
 
 
-        <div className="border border-gray-300 w-[32.5%] text-center rounded-lg py-8 px-4 my-6 shadow-lg hover:shadow-xl bg-white">
+        <div className="border border-gray-300 w-[32.5%] text-center rounded-lg py-8 px-4 my-6 shadow-lg hover:shadow-xl bg-white cursor-pointer">
           <p className="my-16">Icon</p>
           <p className="font-[400] text-[1.4rem] my-2">Google Code-In Finalist</p>
           <p className="my-4 text-gray-500">
