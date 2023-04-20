@@ -16,39 +16,39 @@ const Footer = () => {
     </h1>
 
     <nav aria-label="Footer Nav" className="mt-10">
-      <ul className="flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
+      <ul className="flex flex-wrap justify-center">
         <li>
-          <a className="text-gray-700 transition hover:text-gray-700/75" href="#skills">
+          <a className="px-4 py-2 hover:bg-gray-100 hover:text-[#1DA1F2]" href="#skills">
             Skills
           </a>
         </li>
 
         <li>
-          <a className="text-gray-700 transition hover:text-gray-700/75" href="#experience">
+          <a className="px-4 py-2 hover:bg-gray-100 hover:text-[#1DA1F2]" href="#experience">
             Work Experience
           </a>
         </li>
 
         <li>
-          <a className="text-gray-700 transition hover:text-gray-700/75" href="#education">
+          <a className="px-4 py-2 hover:bg-gray-100 hover:text-[#1DA1F2]" href="#education">
             Education
           </a>
         </li>
 
         <li>
-          <a className="text-gray-700 transition hover:text-gray-700/75" href="/">
+          <a className="px-4 py-2 hover:bg-gray-100 hover:text-[#1DA1F2]" href="/">
             Open Source
           </a>
         </li>
 
         <li>
-          <a className="text-gray-700 transition hover:text-gray-700/75" href="/">
+          <a className="px-4 py-2 hover:bg-gray-100 hover:text-[#1DA1F2]" href="/">
             Achievements
           </a>
         </li>
 
         <li>
-          <a className="text-gray-700 transition hover:text-gray-700/75" href="#blogs">
+          <a className="px-4 py-2 hover:bg-gray-100 hover:text-[#1DA1F2]" href="#blogs">
             Blogs
           </a>
         </li>

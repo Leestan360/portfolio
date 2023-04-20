@@ -12,7 +12,7 @@ const ExperienceCard = ({ key, work }: Props) => {
     <div
       key={key}
       id="parent"
-      className="relative block overflow-hidden border border-gray-100 hover:shadow-xl rounded-[6px] shadow-lg  cursor-pointer bg-white p-4 sm:p-6 lg:p-8"
+      className="relative block overflow-hidden border border-gray-100 hover:shadow-xl rounded-lg shadow-lg  cursor-pointer bg-white p-4 sm:p-6 lg:p-8"
     >
       <span id="child" className="absolute inset-x-0 bottom-0 h-2"></span>
       <div className="sm:flex sm:justify-between sm:gap-4 mb-4 border-b-2 border-gray-100 pb-4">
@@ -24,7 +24,7 @@ const ExperienceCard = ({ key, work }: Props) => {
           />
         </div>
         <div>
-          <span className="text-lg font-bold text-gray-900 sm:text-xl">
+          <span className="text-lg font-bold text-[#1DA1F2] sm:text-xl">
             {work.company}
           </span>
           <span className="text-lg font-extrabold text-blue-700">.</span>

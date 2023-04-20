@@ -9,22 +9,22 @@ function NavBar() {
         <i className="fa-thin fa-greater-than"></i>
       </a>
       <div aria-label="Footer Nav">
-        <a href="#skills" className="px-4 py-2  hover:bg-gray-100 ">
+        <a href="#skills" className="px-4 py-2  hover:bg-gray-100 hover:text-[#1DA1F2] ">
           Skills
         </a>
-        <a href="#experience" className="px-4 py-2 hover:bg-gray-100">
+        <a href="#experience" className="px-4 py-2 hover:bg-gray-100  hover:text-[#1DA1F2] ">
           Work Experience
         </a>
-        <a href="#education" className="px-4 py-2 hover:bg-gray-100">
+        <a href="#education" className="px-4 py-2 hover:bg-gray-100 hover:text-[#1DA1F2] ">
           Education
         </a>
-        <a href="#open-source" className="px-4 py-2 hover:bg-gray-100">
+        <a href="#open-source" className="px-4 py-2 hover:bg-gray-100 hover:text-[#1DA1F2] ">
           Open Source
         </a>
-        <a href="#achievements" className="px-4 py-2 hover:bg-gray-100">
+        <a href="#achievements" className="px-4 py-2 hover:bg-gray-100 hover:text-[#1DA1F2] ">
           Achievements
         </a>
-        <a href="#blogs" className="px-4 py-2 hover:bg-gray-100">
+        <a href="#blogs" className="px-4 py-2 hover:bg-gray-100 hover:text-[#1DA1F2] ">
           Blogs
         </a>
       </div>

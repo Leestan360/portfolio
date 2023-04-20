@@ -17,7 +17,7 @@ export function App() {
   // bg-[#171c28]
   
   return (
-    <div className="px-32">
+    <div className="px-32 bg-[#16202A] ">
       <HomePage />
       <Skills />
       <Experience/>
