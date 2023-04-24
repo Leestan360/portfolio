@@ -1,6 +1,10 @@
 import * as React from "react";
 
-function NavBar() {
+interface NavbarProps {
+  onToggleTheme: () => void;
+}
+
+const NavBar: React.FC<NavbarProps> = ({ onToggleTheme }) => {
   return (
     <div className="flex justify-between text-[1.2rem] py-6 ">
       <a href="/">
@@ -29,7 +33,7 @@ function NavBar() {
         </a>
       </div>
 
-      <i className="fa-solid fa-moon"></i>
+      <i className="fa-solid fa-moon cursor-pointer" onClick={onToggleTheme}></i>
     </div>
   );
 }

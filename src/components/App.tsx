@@ -9,26 +9,37 @@ import Footer from "../pages/footer";
 import Blog from "../pages/blog";
 import Projects from "./projects/Projects";
 import BigProjects from "./projects/BigProjects";
+import { ThemeContext } from "../ThemeContext";
+import { themes } from "../theme";
+import NavBar from "./navbar";
 
-
-export function App() {
+function App() {
+  const { theme, toggleTheme } = React.useContext(ThemeContext);
+  const themeColors = themes[theme];
 
   // const [toggle, setToggle] = React.useState(false)
   // bg-[#171c28]
-  
+
   return (
-    <div className="px-32 bg-[#16202A] ">
-      <HomePage />
-      <Skills />
-      <Experience/>
-      <Education/>
-      <Projects />
-      <BigProjects />
-      <Achievements/>
-      <Blog/>
-      <Footer/>
-    </div>
-  )
+      <div
+        className="px-32"
+        style={{
+          backgroundColor: themeColors.background,
+          color: themeColors.text,
+        }}
+      >
+        <NavBar onToggleTheme={toggleTheme} />
+        <HomePage />
+        <Skills />
+        <Experience />
+        <Education />
+        <Projects />
+        <BigProjects />
+        <Achievements />
+        <Blog />
+        <Footer />
+      </div>
+  );
 }
 
 export default App;
