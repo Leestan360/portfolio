@@ -14,11 +14,11 @@ const BlogCard = ({ key, blog }: Props) => {
     >
       <div className="flex items-start sm:gap-8">
         <div
-          className="hidden sm:grid sm:h-14 sm:w-14 sm:shrink-0 sm:place-content-center sm:rounded-full sm:border sm:border-gray-700 my-auto"
+          className="hidden sm:grid sm:h-14 sm:w-14 sm:shrink-0 sm:place-content-center sm:rounded-full sm:border sm:border-[#1DA1F2] my-auto"
           aria-hidden="true"
         >
           <div >
-            <i className="fa-solid text-3xl fa-feather text-gray-700"></i>
+            <i className="fa-solid fa-pen text-3xl text-[#1DA1F2] "></i>
           </div>
         </div>
 
@@ -30,7 +30,7 @@ const BlogCard = ({ key, blog }: Props) => {
             </a>
           </h3>
 
-          <p className="mt-1 text-sm text-gray-700">{blog.description}</p>
+          <p className="mt-1 text-sm text-gray-700 font-thin">{blog.description}</p>
         </div>
       </div>
     </article>

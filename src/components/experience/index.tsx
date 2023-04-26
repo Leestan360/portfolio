@@ -21,7 +21,7 @@ const ExperienceCard = ({ key, work }: Props) => {
           <img
             alt={`${work.company}`}
             src="https://source.unsplash.com/mjRwhvqEC0U/600x600"
-            className="border border-solid border-blue-700 h-24 w-24 rounded-full object-cover shadow-sm"
+            className="border border-solid border-[#1DA1F2] h-24 w-24 rounded-full object-cover shadow-sm"
           />
         </div>
         <div>
@@ -35,7 +35,7 @@ const ExperienceCard = ({ key, work }: Props) => {
           <p className="mt-1 text-base font-normal text-gray-500">
             {work.date}
           </p>
-          <p className="mt-1 text-base font-normal text-gray-500">
+          <p className="mt-1 text-base font-thin text-gray-500">
             {work.desc}
           </p>
         </div>
@@ -44,12 +44,12 @@ const ExperienceCard = ({ key, work }: Props) => {
         <span className="text-base font-semibold text-slate-900">
           {"Stack: "}
         </span>
-        <span className="mt-1 text-base font-normal text-gray-500">
+        <span className="mt-1 text-base font-thin text-gray-500">
           <Skills skills={work.stack}></Skills>
         </span>
         <span></span>
         <div className="mt-1">
-          <p className="max-w-fit text-sm/[12px] text-gray-500">
+          <p className="max-w-fit text-sm/[12px] text-gray-500 font-thin">
             <Bullet descBullets={work.descBullets} />
           </p>
         </div>

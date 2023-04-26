@@ -6,15 +6,15 @@ function Skills() {
       <img src="/homeImage.png" alt="image2" className=""></img>
       <div className="w-[48%]">
         <p className="text-5xl font-[400] text-[#1DA1F2] ">What I do</p>
-        <ul className="pb-10 py-1 text-[1.5rem] font-[400] ">
-          <li className="py-2 font-[300] leading-7">
+        <ul className="pb-10 py-1 text-2xl font-thin  ">
+          <li className="py-2 ">
             Develop highly interactive Front end / User Interfaces for your web
             and mobile applications
           </li>
-          <li className="py-2 font-[300] leading-7">
+          <li className="py-2">
             Progressive Web Applications (PWA) in normal and SPA Stacks
           </li>
-          <li className="py-2 font-[300] leading-7">
+          <li className="py-2">
             Integration of third party services such as Firebase/ AWS / Digital
             Ocean
           </li>

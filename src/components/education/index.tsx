@@ -25,24 +25,24 @@ const EducationCard = ({key, school}: Props) => {
         {school.schoolName}
       </h3>
 
-      <p className="mt-1 text-lg font-medium text-gray-700">{school.subHeader}</p>
-      <p className="mt-1 text-base font-medium text-gray-700">{school.duration}</p>
+      <p className="mt-1 text-lg font-semibold text-gray-500">{school.subHeader}</p>
+      <p className="mt-1 text-base font-normal text-gray-500">{school.duration}</p>
     </div>
 
     <div className="hidden sm:block sm:shrink-0">
       <img
         alt={`${school.schoolName}`}
         src="https://source.unsplash.com/mjRwhvqEC0U/600x600"
-        className="border border-solid border-blue-700 h-24 w-24 rounded-full object-cover shadow-sm"
+        className="border border-solid border-[#1DA1F2] h-24 w-24 rounded-full object-cover shadow-sm"
       />
     </div>
   </div>
 
-    <p className="mt-1 text-base font-normal text-gray-500 max-w-[70ch]"
+    <p className="mt-1 text-base font-thin text-gray-500 max-w-[70ch]"
     >{school.desc}</p>
 
   <div className="mt-1">
-    <p className="max-w-fit text-sm/[12px] font-normal text-gray-500">
+    <p className="max-w-fit text-sm/[12px] font-thin text-gray-500">
       <Bullet descBullets={school.descBullets}/>
     </p>
   </div>

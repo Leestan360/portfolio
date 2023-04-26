@@ -6,11 +6,11 @@ function Projects() {
       <h3 className="text-5xl font-[400] text-[#1DA1F2]">Open Source Projects</h3>
       <div className="flex flex-wrap justify-between my-3 gap-y-5">
         <div className="border border-gray-100 py-5 px-7 w-[32.5%] rounded-lg shadow-lg  cursor-pointer my-2 hover:shadow-xl bg-white">
-          <p className="font-[400] text-[2em] text-[#1DA1F2] ">Project</p>
-          <p className="pb-5 pt-2 text-gray-500 text-[1.3rem] leading-6">
+          <p className="text-lg font-bold text-[#1DA1F2]">Project</p>
+          <p className="pb-5 pt-2 text-lg font-normal text-gray-500">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
           </p>
-          <div className="flex justify-between text-gray-500 text-[1.1rem] font-[300] pb-6">
+          <div className="flex justify-between text-gray-500 text-[1.1rem] font-thin pb-6">
             <div className="flex gap-2">
               <p>JavaScript</p>
               <p>1800</p>
@@ -21,11 +21,11 @@ function Projects() {
         </div>
          
         <div className="border border-gray-100 py-5 px-7 w-[32.5%] rounded-lg shadow-lg  cursor-pointer my-2 hover:shadow-xl bg-white">
-          <p className="font-[400] text-[2em]  text-[#1DA1F2]">Project</p>
-          <p className="pb-5 pt-2 text-gray-500 text-[1.3rem] leading-6">
+          <p className="text-lg font-bold text-[#1DA1F2]">Project</p>
+          <p className="pb-5 pt-2 text-lg font-normal text-gray-500">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
           </p>
-          <div className="flex justify-between text-gray-500 text-[1.1rem] font-[300] pb-6">
+          <div className="flex justify-between text-gray-500 text-[1.1rem] font-thin pb-6">
             <div className="flex gap-2">
               <p>JavaScript</p>
               <p>1800</p>
@@ -36,11 +36,11 @@ function Projects() {
         </div>
 
         <div className="border border-gray-100 py-5 px-7 w-[32.5%] rounded-lg shadow-lg  cursor-pointer my-2 hover:shadow-xl bg-white">
-          <p className="font-[400] text-[2em]  text-[#1DA1F2]">Project</p>
-          <p className="pb-5 pt-2 text-gray-500 text-[1.3rem] leading-6">
+          <p className="text-lg font-bold text-[#1DA1F2]">Project</p>
+          <p className="pb-5 pt-2 text-lg font-normal text-gray-500">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
           </p>
-          <div className="flex justify-between text-gray-500 text-[1.1rem] font-[300] pb-6">
+          <div className="flex justify-between text-gray-500 text-[1.1rem] font-thin pb-6">
             <div className="flex gap-2">
               <p>JavaScript</p>
               <p>1800</p>
@@ -51,11 +51,11 @@ function Projects() {
         </div>
 
         <div className="border border-gray-100 py-5 px-7 w-[32.5%] rounded-lg shadow-lg  cursor-pointer my-2 hover:shadow-xl bg-white">
-          <p className="font-[400] text-[2em]  text-[#1DA1F2]">Project</p>
-          <p className="pb-5 pt-2 text-gray-500 text-[1.3rem] leading-6">
+          <p className="text-lg font-bold text-[#1DA1F2]">Project</p>
+          <p className="pb-5 pt-2 text-lg font-normal text-gray-500">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
           </p>
-          <div className="flex justify-between text-gray-500 text-[1.1rem] font-[300] pb-6">
+          <div className="flex justify-between text-gray-500 text-[1.1rem] font-thin pb-6">
             <div className="flex gap-2">
               <p>JavaScript</p>
               <p>1800</p>
