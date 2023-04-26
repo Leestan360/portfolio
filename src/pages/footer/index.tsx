@@ -11,7 +11,7 @@ const Footer = () => {
     <footer aria-label="Site Footer" className="mt-16">
   <div className="mx-auto max-w-5xl px-4 py-2 sm:px-6 lg:px-8 border-t-4 border-gray-100">
 
-    <h1 className="mx-auto mt-12 text-center leading-relaxed text-gray-700 text-2xl font-semibold">
+    <h1 className="mx-auto mt-12 text-center leading-relaxed text-[#1DA1F2] text-2xl font-semibold">
       {headLine.text}
     </h1>
 
@@ -96,7 +96,7 @@ const Footer = () => {
           href={`mailto:${email}`}
           rel="noreferrer"
           target="_blank"
-          className="text-gray-700 transition hover:text-[#3e65cf]"
+          className="text-gray-700 transition hover:text-[#1DA1F2]"
         >
           <span className="sr-only">Email</span>
           <i className="text-4xl fa-sharp fa-solid fa-at"></i>

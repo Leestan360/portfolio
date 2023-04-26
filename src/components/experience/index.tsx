@@ -1,6 +1,7 @@
 import React from "react";
 import { WorkType } from "../../types";
 import Bullet from "../Bullets";
+import Skills from "./stack";
 
 type Props = {
   key: number;
@@ -25,11 +26,11 @@ const ExperienceCard = ({ key, work }: Props) => {
         </div>
         <div>
           <span className="text-lg font-bold text-[#1DA1F2] sm:text-xl">
-            {work.company}
-          </span>
-          <span className="text-lg font-extrabold text-blue-700">.</span>
-          <span className="text-lg font-semibold text-gray-500">
             {work.role}
+          </span>
+          <span className="text-lg font-extrabold text-gray-500">@</span>
+          <span className="text-lg font-semibold text-gray-500">
+            {work.company}
           </span>
           <p className="mt-1 text-base font-normal text-gray-500">
             {work.date}
@@ -44,7 +45,7 @@ const ExperienceCard = ({ key, work }: Props) => {
           {"Stack: "}
         </span>
         <span className="mt-1 text-base font-normal text-gray-500">
-          {work.stack.join(", ")}.
+          <Skills skills={work.stack}></Skills>
         </span>
         <span></span>
         <div className="mt-1">
