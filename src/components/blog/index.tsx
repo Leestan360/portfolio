@@ -1,5 +1,6 @@
 import React from "react";
 import { BlogType } from "../../types";
+import { ThemeContext } from "../../ThemeContext";
 
 type Props = {
   key: number;
@@ -7,10 +8,12 @@ type Props = {
 };
 
 const BlogCard = ({ key, blog }: Props) => {
+  const { theme } = React.useContext(ThemeContext);
+
   return (
     <article
       key={key}
-      className=" bg-white p-2 border border-gray-100 hover:shadow-xl rounded-lg shadow-lg  cursor-pointer sm:p-6 lg:p-8"
+      className="  p-2 border border-gray-100 hover:shadow-xl rounded-lg shadow-lg  cursor-pointer sm:p-6 lg:p-8"
     >
       <div className="flex items-start sm:gap-8">
         <div
@@ -30,7 +33,7 @@ const BlogCard = ({ key, blog }: Props) => {
             </a>
           </h3>
 
-          <p className="mt-1 text-sm text-gray-700 font-thin">{blog.description}</p>
+          <p className={theme === "dark" ? "mt-1 text-sm text-white font-thin" : "mt-1 text-sm text-gray-500 font-thin"}>{blog.description}</p>
         </div>
       </div>
     </article>
