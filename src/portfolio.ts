@@ -1,6 +1,92 @@
+import emoji from "react-easy-emoji";
+
+const homeInfo = {
+  username: "Saad Pasta",
+  greeting: "Hi all, I'm ",
+  prefname: "Stanley",
+  subtitle: emoji(
+    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Rails / FastAPI and some other cool libraries and frameworks."
+  ),
+  resumeLink:
+    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+  displayGreeting: true // Set false to hide this section, defaults to true
+};
+
 const headLine = {
   text: "Fullstack Machine Learning/Data Engineer | Python | DataOps | MLOps"
 }
+
+// Skills Section
+
+const skillsInfo = {
+  title: "What I do",
+  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  jd: [
+    emoji(
+      "⚡Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+    ),
+    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
+    emoji(
+      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+    )
+  ],
+
+  /* Make Sure to include correct Font Awesome Classname to view your icon
+https://fontawesome.com/icons?d=gallery */
+
+  languageskills: [{
+      skillName: "Python",
+      fontAwesomeClassname: "fab fa-python"
+    },
+    {
+      skillName: "JavaScript",
+      fontAwesomeClassname: "fab fa-js"
+    }
+],
+
+  frameworkskills: [ {
+      skillName: "reactjs",
+      fontAwesomeClassname: "fab fa-react"
+    },
+    {
+      skillName: "nodejs",
+      fontAwesomeClassname: "fab fa-node"
+    },
+  ],
+
+  cloud: [
+    {
+      skillName: "AWS",
+      fontAwesomeClassname: "fab fa-aws"
+    },
+    {
+      skillName: "AWS",
+      fontAwesomeClassname: "fab fa-aws"
+    }
+  ],
+
+  databaseskills: [
+    {
+      skillName: "PostgreSQL",
+      fontAwesomeClassname: "fas fa-database"
+    },
+        {
+      skillName: "BigQuery",
+      fontAwesomeClassname: "fas fa-database"
+    }
+  ],
+
+  others: [
+        {
+      skillName: "docker",
+      fontAwesomeClassname: "fab fa-docker"
+    }
+  ],
+  display: true // Set false to hide this section, defaults to true
+};
+
+
+// Experience Section
 const workInfo = {
   display: true, //Set it to true to show workExperiences Section
   experiences: [
@@ -38,6 +124,8 @@ const workInfo = {
     }
   ]
 };
+
+// Education Section
 
 const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
@@ -277,4 +365,4 @@ const blogInfo = {
 };
 
 
-export {headLine, educationInfo, workInfo, bigProjectsInfo, openSourceProjectsInfo, achievementsInfo, blogInfo};
+export {homeInfo, headLine, skillsInfo, educationInfo, workInfo, bigProjectsInfo, openSourceProjectsInfo, achievementsInfo, blogInfo};

@@ -1,10 +1,6 @@
 import * as React from "react";
-import HomePage from "../pages/home/HomePage";
-import Skills from "./skills";
 import Education from "../pages/education";
 import Experience from "../pages/experience";
-
-
 import Footer from "../pages/footer";
 import Blog from "../pages/blog";
 import { ThemeContext } from "../ThemeContext";
@@ -13,6 +9,8 @@ import NavBar from "./navbar";
 import BigProject from "../pages/bigprojects";
 import OpenSourceProject from "../pages/opensourceprojects";
 import Achievements from "../pages/achievements";
+import Skills from "../pages/skills";
+import Home from "../pages/home";
 
 function App() {
   const { theme, toggleTheme } = React.useContext(ThemeContext);
@@ -30,7 +28,7 @@ function App() {
         }}
       >
         <NavBar onToggleTheme={toggleTheme} />
-        <HomePage />
+        <Home/>
         <Skills />
         <Experience />
         <Education />

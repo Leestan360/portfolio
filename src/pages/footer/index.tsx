@@ -9,7 +9,7 @@ const Footer = () => {
   const email = "realonbebeto@gmail.com"
   return (
     <footer aria-label="Site Footer" className="mt-16">
-  <div className="mx-auto max-w-5xl px-4 py-2 sm:px-6 lg:px-8 border-t-4 border-gray-100">
+  <div className="mx-auto max-w-5xl px-4 py-2 sm:px-6 lg:px-8 border-t-3 border-gray-100">
 
     <h1 className="mx-auto mt-12 text-center leading-relaxed text-[#1DA1F2] text-2xl font-semibold">
       {headLine.text}
@@ -36,13 +36,20 @@ const Footer = () => {
         </li>
 
         <li>
-          <a className="px-4 py-2 hover:bg-gray-100 hover:text-[#1DA1F2]" href="/">
+          <a className="px-4 py-2 hover:bg-gray-100 hover:text-[#1DA1F2]" href="#open-source">
             Open Source
           </a>
         </li>
 
         <li>
-          <a className="px-4 py-2 hover:bg-gray-100 hover:text-[#1DA1F2]" href="/">
+          <a className="px-4 py-2 hover:bg-gray-100 hover:text-[#1DA1F2]" href="#big-projects">
+            Big Projects
+          </a>
+        </li>
+
+
+        <li>
+          <a className="px-4 py-2 hover:bg-gray-100 hover:text-[#1DA1F2]" href="#achievements">
             Achievements
           </a>
         </li>
