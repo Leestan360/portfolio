@@ -6,9 +6,10 @@ import {DiSpark} from "react-icons/di"
 
 
 const homeInfo = {
-  username: "Saad Pasta",
+  username: "Stanley Mayore",
   greeting: "Hi all, I'm ",
   prefname: "Stanley",
+  prefTitle: "Full Stack Software Developer",
   subtitle: emoji(
     "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Rails / FastAPI and some other cool libraries and frameworks."
   ),

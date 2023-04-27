@@ -11,10 +11,13 @@ import OpenSourceProject from "../pages/opensourceprojects";
 import Achievements from "../pages/achievements";
 import Skills from "../pages/skills";
 import Home from "../pages/home";
+import HelmetTitle from "../HelmetTitle";
+import { homeInfo } from "../portfolio";
 
 function App() {
   const { theme, toggleTheme } = React.useContext(ThemeContext);
   const themeColors = themes[theme];
+  const title = homeInfo.prefTitle;
 
   // const [toggle, setToggle] = React.useState(false)
   // bg-[#171c28]
@@ -27,6 +30,7 @@ function App() {
           color: themeColors.text,
         }}
       >
+        <HelmetTitle title={title} />
         <NavBar onToggleTheme={toggleTheme} />
         <Home/>
         <Skills />

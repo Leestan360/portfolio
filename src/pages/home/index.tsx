@@ -4,7 +4,7 @@ import { homeInfo } from '../../portfolio'
 
 const Home = () => {
   return (
-    <div className="flex justify-center h-screen">
+    <div className="flex justify-center h-screen">      
       <div className="w-[48%] text-center my-auto">
         <h3 className="text-[4rem] font-thin">{homeInfo.greeting} <span className="font-medium">{homeInfo.prefname}</span></h3>
         <p className="py-8 text-2xl font-thin">
