@@ -9,9 +9,9 @@ function BigProjects() {
       <div className="flex justify-between my-5">
 
         <div className="w-[49%] border border-gray-300 px-24 py-6 rounded-[10px] shadow-lg hover:shadow-xl cursor-pointer bg-white">
-          <p className="text-center py-16 text-[2rem] font-[800]">Skoolpesa</p>
+          <p className="text-center py-16 text-[2rem] font-[800] text-[#1DA1F2]">Skoolpesa</p>
           <p className="text-center text-[1.5rem] font-[400] text-[#1DA1F2] ">Skoolpesa</p>
-          <p className="text-center my-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+          <p className="text-center my-4  text-gray-500 font-thin">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
           <div className="flex justify-center">
             <Link
               to=""
@@ -24,9 +24,9 @@ function BigProjects() {
 
 
         <div className="w-[49%] border border-gray-300 px-24 py-6 rounded-[10px] shadow-lg hover:shadow-xl cursor-pointer  bg-white">
-          <p className="text-center py-16 text-[2rem] font-[800]">Skoolpesa</p>
+          <p className="text-center py-16 text-[2rem] font-[800] text-[#1DA1F2]">Skoolpesa</p>
           <p className="text-center text-[1.5rem] font-[400] text-[#1DA1F2]">Skoolpesa</p>
-          <p className="text-center my-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+          <p className="text-center my-4  text-gray-500 font-thin">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
           <div className="flex justify-center">
             <Link
               to=""
