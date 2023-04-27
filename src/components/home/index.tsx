@@ -5,7 +5,7 @@ function Home() {
     <div className="flex justify-center h-screen">
       <div className="w-[48%] text-center my-auto">
         <h3 className="text-[4rem] font-thin">Hi all, I'm <span className="font-medium">Stanley</span></h3>
-        <p className="py-8 text-3xl font-thin">
+        <p className="py-8 text-2xl font-thin">
           A passionate Full Stack Software Developer having an experience of
           building Web and Mobile applications with JavaScript / Reactjs / Rails
           / FastAPI and some other cool libraries and frameworks.

@@ -22,3 +22,30 @@ export interface BlogType {
     title: string;
     description: string;
 }
+
+
+export interface BigProjectType {
+    // image: string;
+    projectname: string;
+    description: string;
+    footerlink: Array<any>
+
+}
+
+export interface OpenSourceProjectType{
+    nodename: string;
+    description: string;
+    primarylanguage: string;
+    forkcount: number;
+    stargazers: number;
+    diskusage: string;
+}
+
+export interface AchievementType {
+    title: string;
+    subtitle: string; 
+    // image: string;
+    imagealt: string;
+    footerlink: Array<any>
+
+}

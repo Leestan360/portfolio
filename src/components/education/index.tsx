@@ -42,7 +42,7 @@ const EducationCard = ({key, school}: Props) => {
     >{school.desc}</p>
 
   <div className="mt-1">
-    <p className="max-w-fit text-sm/[12px] font-thin text-gray-500">
+    <p className="max-w-fit text-base font-thin text-gray-500">
       <Bullet descBullets={school.descBullets}/>
     </p>
   </div>

@@ -41,19 +41,23 @@ const ExperienceCard = ({ key, work }: Props) => {
         </div>
       </div>
       <div>
-        <span className="text-base font-semibold text-slate-900">
+        {/* <span className="text-base font-semibold text-slate-900">
           {"Stack: "}
-        </span>
-        <span className="mt-1 text-base font-thin text-gray-500">
-          <Skills skills={work.stack}></Skills>
-        </span>
-        <span></span>
+        </span> */}
+
+        {/* <span></span> */}
         <div className="mt-1">
-          <p className="max-w-fit text-sm/[12px] text-gray-500 font-thin">
+          <p className="max-w-fit text-base text-gray-500 font-thin">
             <Bullet descBullets={work.descBullets} />
           </p>
         </div>
       </div>
+      <div className="pt-5 grid justify-items-center">
+          <span className="mt-1 text-sm font-thin text-gray-500">
+            <Skills skills={work.stack}></Skills>
+          </span>
+      </div>
+
     </div>
   );
 };

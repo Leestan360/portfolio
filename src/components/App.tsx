@@ -3,15 +3,16 @@ import HomePage from "../pages/home/HomePage";
 import Skills from "./skills";
 import Education from "../pages/education";
 import Experience from "../pages/experience";
-// import ProjectsCard from "./projects";
-import Achievements from "./achievements";
+
+
 import Footer from "../pages/footer";
 import Blog from "../pages/blog";
-import Projects from "./projects/Projects";
-import BigProjects from "./projects/BigProjects";
 import { ThemeContext } from "../ThemeContext";
 import { themes } from "../theme";
 import NavBar from "./navbar";
+import BigProject from "../pages/bigprojects";
+import OpenSourceProject from "../pages/opensourceprojects";
+import Achievements from "../pages/achievements";
 
 function App() {
   const { theme, toggleTheme } = React.useContext(ThemeContext);
@@ -33,8 +34,8 @@ function App() {
         <Skills />
         <Experience />
         <Education />
-        <Projects />
-        <BigProjects />
+        <OpenSourceProject />
+        <BigProject/>
         <Achievements />
         <Blog />
         <Footer />
