@@ -9,10 +9,10 @@ type Props = {
 
 const BigProjectCard = ({key, project}: Props) => {
   return (
-    <div key={key} className="w-[49%] border border-gray-300 px-24 py-6 rounded-[10px] shadow-lg hover:shadow-xl cursor-pointer bg-white w-auto">
-        <p className="text-center py-16 text-[2rem] font-[800]">{project.projectname}</p>
+    <div key={key} className="w-[32%] border border-gray-100 px-5 py-6 rounded-lg shadow-lg hover:shadow-xl cursor-pointer bg-white">
+        <p className="text-center py-2 text-[2rem] font-[800] text-[#1DA1F2] font-normal">{project.projectname}</p>
         <p className="text-center text-[1.5rem] font-[400] text-[#1DA1F2] ">{project.projectname}</p>
-        <p className="text-center my-4">{project.description}</p>
+        <p className="text-center my-4 text-gray-500">{project.description}</p>
         <div className="flex justify-center">
         <Link
             to=""

@@ -8,7 +8,7 @@ type Props = {
 
 const OpenSourceProjectCard = ({key, project}: Props) => {
   return (
-    <div key={key} className="border border-gray-100 pt-5 px-7 w-auto rounded-lg shadow-lg  cursor-pointer mt-2 hover:shadow-xl bg-white">
+    <div key={key} className="border border-gray-100 pt-5 px-7 w-[23%] rounded-lg shadow-lg  cursor-pointer mt-2 hover:shadow-xl bg-white">
           <p className="text-lg font-bold text-[#1DA1F2]">{project.nodename}</p>
           <p className="pb-5 pt-2 text-base font-light text-gray-500">
             {project.description}

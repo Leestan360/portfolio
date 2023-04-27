@@ -117,6 +117,14 @@ const openSourceProjectsInfo = {
       stargazers: 50,
       diskusage: "20MB"
     },
+    {
+      nodename: "Web Application",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      primarylanguage: "Java",
+      forkcount: 30,
+      stargazers: 50,
+      diskusage: "20MB"
+    },
     
   ]
 }
@@ -147,6 +155,30 @@ const bigProjectsInfo = {
           name: "Visit Website",
           url: "http://nextu.se/"
         }
+      ]
+    },
+    {
+      // image: require("./assets/images/saayaHealthLogo.webp"),
+      projectname: "Saayahealth",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      footerlink: [
+        {
+          name: "Visit Website",
+          url: "http://saayahealth.com/"
+        }
+        //  you can add extra buttons here.
+      ]
+    },
+    {
+      // image: require("./assets/images/saayaHealthLogo.webp"),
+      projectname: "Saayahealth",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      footerlink: [
+        {
+          name: "Visit Website",
+          url: "http://saayahealth.com/"
+        }
+        //  you can add extra buttons here.
       ]
     }
   ],

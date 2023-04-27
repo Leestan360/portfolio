@@ -6,7 +6,7 @@ import BigProjectCard from '../../components/bigproject'
 const BigProject = () => {
     const bigProjectSectionStyle = "flex flex-col my-24"
     const bigProjectHeaderStyle = "text-5xl font-[400] text-[#1DA1F2]"
-    const bigProjectCardContainerStyle = "flex flex-row justify-center pt-5 grid md:grid-cols-2 gap-9"
+    const bigProjectCardContainerStyle = "flex flex-wrap justify-between pt-5 gap-y-7"
   return (
     <section className={bigProjectSectionStyle} id="big-projects">
         <div className="w-auto">

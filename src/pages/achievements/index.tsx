@@ -9,7 +9,7 @@ const Achievements = () => {
     // const trial = "flex flex-wrap justify-between"
     const achievementCardContainerStyle = "flex flex-row justify-center pt-5 grid md:grid-cols-3 gap-9"
   return (
-    <section className={achievementSectionStyle} id="big-projects">
+    <section className={achievementSectionStyle} id="achievements">
         <div className="w-auto">
           <h1 className={achievementHeaderStyle}>Achievements</h1>
         </div>

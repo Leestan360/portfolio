@@ -6,7 +6,7 @@ import OpenSourceProjectCard from '../../components/opensourceproject'
 const OpenSourceProject = () => {
     const openSourceProjectSectionStyle = "flex flex-col my-24"
     const openSourceProjectHeaderStyle = "text-5xl font-[400] text-[#1DA1F2]"
-    const openSourceProjectCardContainerStyle = "flex flex-row justify-center pt-5 grid md:grid-cols-4 gap-9"
+    const openSourceProjectCardContainerStyle = "flex flex-wrap justify-between pt-5 gap-7"
   return (
     <section className={openSourceProjectSectionStyle} id="open-source">
         <div className="w-auto">
