@@ -11,35 +11,35 @@ const StackListing = () => {
           <div className="">
             <h4 className="text-lg font-bold text-[#1DA1F2]">Languages</h4>
             {skillsInfo.languageskills.map((skill, index) => (
-              <SkillEntry key={index} skill={skill.skillName} style={skill.fontAwesomeClassname}/>
+              <SkillEntry key={index} skill={skill.skillName} icon={skill.fontAwesomeClassname}/>
             ))}
           </div>
 
           <div className="">
             <h4 className="text-lg font-bold text-[#1DA1F2]">Frameworks</h4>
             {skillsInfo.frameworkskills.map((skill, index) => (
-              <SkillEntry key={index} skill={skill.skillName} style={skill.fontAwesomeClassname}/>
+              <SkillEntry key={index} skill={skill.skillName} icon={skill.fontAwesomeClassname}/>
             ))}
           </div>
 
           <div className="">
             <h4 className="text-lg font-bold text-[#1DA1F2]">Cloud</h4>
             {skillsInfo.cloud.map((skill, index) => (
-              <SkillEntry key={index} skill={skill.skillName} style={skill.fontAwesomeClassname}/>
+              <SkillEntry key={index} skill={skill.skillName} icon={skill.fontAwesomeClassname}/>
             ))}
           </div>
 
           <div className="">
             <h4 className="text-lg font-bold text-[#1DA1F2]">Database</h4>
             {skillsInfo.databaseskills.map((skill, index) => (
-              <SkillEntry key={index} skill={skill.skillName} style={skill.fontAwesomeClassname}/>
+              <SkillEntry key={index} skill={skill.skillName} icon={skill.fontAwesomeClassname}/>
             ))}
           </div>
 
           <div className="">
             <h4 className="text-lg font-bold text-[#1DA1F2]">Others</h4>
             {skillsInfo.others.map((skill, index) => (
-              <SkillEntry key={index} skill={skill.skillName} style={skill.fontAwesomeClassname}/>
+              <SkillEntry key={index} skill={skill.skillName} icon={skill.fontAwesomeClassname}/>
             ))}
           </div>
         </div>

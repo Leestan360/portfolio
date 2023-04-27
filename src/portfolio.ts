@@ -1,4 +1,9 @@
 import emoji from "react-easy-emoji";
+import {SiKubernetes, SiPostgresql, SiPython, SiReact, SiJavascript, SiAmazonaws, SiGooglecloud, SiDocker, SiPandas, SiTensorflow, SiJupyter, SiFastapi, SiMlflow, SiHtml5, SiGit, SiScikitlearn} from "react-icons/si"
+import {FaNode} from "react-icons/fa"
+import {TbBrandGoogleBigQuery} from "react-icons/tb"
+import {DiSpark} from "react-icons/di"
+
 
 const homeInfo = {
   username: "Saad Pasta",
@@ -36,51 +41,93 @@ https://fontawesome.com/icons?d=gallery */
 
   languageskills: [{
       skillName: "Python",
-      fontAwesomeClassname: "fab fa-python"
+      fontAwesomeClassname: SiPython
     },
     {
       skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
+      fontAwesomeClassname: SiJavascript
+    },
+    {
+      skillName: "HTML",
+      fontAwesomeClassname: SiHtml5
     }
 ],
 
   frameworkskills: [ {
       skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
+      fontAwesomeClassname: SiReact
     },
     {
       skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
+      fontAwesomeClassname: FaNode
     },
+    {
+      skillName: "Pandas",
+      fontAwesomeClassname: SiPandas
+    },
+    {
+      skillName: "Tensorflow",
+      fontAwesomeClassname: SiTensorflow
+    },
+    {
+      skillName: "Spark",
+      fontAwesomeClassname: DiSpark
+    },
+    {
+      skillName: "FastAPI",
+      fontAwesomeClassname: SiFastapi
+    },
+    {
+      skillName: "Mlflow",
+      fontAwesomeClassname: SiMlflow
+    },
+    {
+      skillName: "Mlflow",
+      fontAwesomeClassname: SiScikitlearn
+    },
+
   ],
 
   cloud: [
     {
-      skillName: "AWS",
-      fontAwesomeClassname: "fab fa-aws"
+      skillName: "GCP",
+      fontAwesomeClassname: SiGooglecloud
     },
     {
       skillName: "AWS",
-      fontAwesomeClassname: "fab fa-aws"
+      fontAwesomeClassname: SiAmazonaws
     }
   ],
 
   databaseskills: [
     {
       skillName: "PostgreSQL",
-      fontAwesomeClassname: "fas fa-database"
+      fontAwesomeClassname: SiPostgresql
     },
         {
       skillName: "BigQuery",
-      fontAwesomeClassname: "fas fa-database"
+      fontAwesomeClassname: TbBrandGoogleBigQuery
     }
   ],
 
   others: [
         {
       skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
-    }
+      fontAwesomeClassname: SiDocker
+    },
+    {
+      skillName: "k8s",
+      fontAwesomeClassname: SiKubernetes
+    },
+    {
+      skillName: "Jupyter",
+      fontAwesomeClassname: SiJupyter
+    },
+    {
+      skillName: "Git",
+      fontAwesomeClassname: SiGit
+    },
+
   ],
   display: true // Set false to hide this section, defaults to true
 };
