@@ -15,7 +15,7 @@ const AchievementCard = ({key, achievement}: Props) => {
   return (
       <div key={key} className="border border-gray-100 w-auto text-center rounded-lg py-4 px-4 my-6 shadow-lg hover:shadow-xl cursor-pointer">
           <img src="/united-kingdom.png" alt="achievement1" className="w-12 mx-auto" />
-          <p className="font-bold text-lg my-2 text-[#1DA1F2]">
+          <p className="font-normal text-lg my-2 text-[#1DA1F2]">
             {achievement.title}
           </p>
           <p className={theme === "dark" ? "my-4 text-white font-thin" : "my-4 text-gray-500 font-thin"}>

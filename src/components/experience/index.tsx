@@ -28,14 +28,14 @@ const ExperienceCard = ({ key, work }: Props) => {
           />
         </div>
         <div>
-          <span className="text-lg font-bold text-[#1DA1F2] sm:text-xl">
+          <span className="text-lg font-normal text-[#1DA1F2] sm:text-xl">
             {work.role}
           </span>
           <span
             className={
               theme === "dark"
-                ? "text-lg font-extrabold text-white"
-                : "text-lg font-extrabold text-gray-500"
+                ? "text-lg font-bold text-white"
+                : "text-lg font-bold text-gray-500"
             }
           >
             @
@@ -43,8 +43,8 @@ const ExperienceCard = ({ key, work }: Props) => {
           <span
             className={
               theme === "dark"
-                ? "text-lg font-semibold text-white"
-                : "text-lg font-semibold text-gray-500"
+                ? "text-lg font-medium text-white"
+                : "text-lg font-medium text-gray-500"
             }
           >
             {work.company}

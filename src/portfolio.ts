@@ -1,5 +1,5 @@
 import emoji from "react-easy-emoji";
-import {SiKubernetes, SiPostgresql, SiPython, SiReact, SiJavascript, SiAmazonaws, SiGooglecloud, SiDocker, SiPandas, SiTensorflow, SiJupyter, SiFastapi, SiMlflow, SiHtml5, SiGit, SiScikitlearn} from "react-icons/si"
+import {SiKubernetes, SiPostgresql, SiPython, SiReact, SiJavascript, SiAmazonaws, SiGooglecloud, SiDocker, SiPandas, SiTensorflow, SiJupyter, SiFastapi, SiMlflow, SiHtml5, SiGit, SiScikitlearn, SiLooker} from "react-icons/si"
 import {FaNode} from "react-icons/fa"
 import {TbBrandGoogleBigQuery} from "react-icons/tb"
 import {DiSpark} from "react-icons/di"
@@ -16,6 +16,18 @@ const homeInfo = {
   resumeLink:
     "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
+};
+
+const socialMediaInfo = {
+  github: "https://github.com/realonbebeto",
+  linkedin: "https://www.linkedin.com/in/realonebebeto/",
+  gmail: "nberbetto@gmail.com",
+  gitlab: "https://gitlab.com/realonebebeto",
+  twitter: "https://twitter.com/realonbebeto",
+  kaggle: "https://kaggle.com/realonbebeto",
+  // Instagram, Twitter and Kaggle are also supported in the links!
+  // To customize icons and social links, tweak src/components/SocialMedia
+  display: false // Set true to display this section, defaults to false
 };
 
 const headLine = {
@@ -83,7 +95,7 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: SiMlflow
     },
     {
-      skillName: "Mlflow",
+      skillName: "Scikit-Learn",
       fontAwesomeClassname: SiScikitlearn
     },
 
@@ -128,6 +140,10 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "Git",
       fontAwesomeClassname: SiGit
     },
+    {
+      skillName:"Looker",
+      fontAwesomeClassname: SiLooker
+    }
 
   ],
   display: true // Set false to hide this section, defaults to true
@@ -413,4 +429,4 @@ const blogInfo = {
 };
 
 
-export {homeInfo, headLine, skillsInfo, educationInfo, workInfo, bigProjectsInfo, openSourceProjectsInfo, achievementsInfo, blogInfo};
+export {homeInfo, headLine, socialMediaInfo, skillsInfo, educationInfo, workInfo, bigProjectsInfo, openSourceProjectsInfo, achievementsInfo, blogInfo};

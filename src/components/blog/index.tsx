@@ -1,6 +1,7 @@
 import React from "react";
 import { BlogType } from "../../types";
 import { ThemeContext } from "../../ThemeContext";
+import {ImBlog} from "react-icons/im";
 
 type Props = {
   key: number;
@@ -21,7 +22,9 @@ const BlogCard = ({ key, blog }: Props) => {
           aria-hidden="true"
         >
           <div >
-            <i className="fa-solid fa-pen text-3xl text-[#1DA1F2] "></i>
+            <span className="text-3xl text-[#1DA1F2]">
+              <ImBlog/>
+            </span>
           </div>
         </div>
 
@@ -33,7 +36,7 @@ const BlogCard = ({ key, blog }: Props) => {
             </a>
           </h3>
 
-          <p className={theme === "dark" ? "mt-1 text-sm text-white font-thin" : "mt-1 text-sm text-gray-500 font-thin"}>{blog.description}</p>
+          <p className={theme === "dark" ? "mt-1 text-base text-white font-thin" : "mt-1 text-base text-gray-500 font-thin"}>{blog.description}</p>
         </div>
       </div>
     </article>

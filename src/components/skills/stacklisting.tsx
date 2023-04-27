@@ -6,7 +6,7 @@ import SkillEntry from "./skillentry";
 const StackListing = () => {
   return (
         <div className="w-[48%]">
-        <p className="text-5xl font-[400] text-[#1DA1F2]">What I use</p>
+        <p className="text-2xl font-light text-[#1DA1F2]">PROFICIENCIES</p>
         <div className="flex justify-between py-3 ">
           <div className="">
             <h4 className="text-lg font-bold text-[#1DA1F2]">Languages</h4>

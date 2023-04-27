@@ -13,9 +13,9 @@ const BigProjectCard = ({key, project}: Props) => {
 
   return (
     <div key={key} className="w-[32%] border border-gray-100 px-5 py-6 rounded-lg shadow-lg hover:shadow-xl cursor-pointer">
-        <p className="text-center py-2 text-[2rem] font-[800] text-[#1DA1F2] font-normal">{project.projectname}</p>
-        <p className="text-center text-[1.5rem] font-[400] text-[#1DA1F2] ">{project.projectname}</p>
-        <p className={theme === "dark" ? "text-center my-4 text-white" : "text-center my-4 text-gray-500"}>{project.description}</p>
+        <p className="text-center py-2 text-[2rem] text-[#1DA1F2] font-normal">{project.projectname}</p>
+        <p className="text-center text-[1.5rem] font-normal text-[#1DA1F2] ">{project.projectname}</p>
+        <p className={theme === "dark" ? "text-center my-4 font-light text-white" : "text-center my-4 font-light text-gray-500"}>{project.description}</p>
         <div className="flex justify-center">
         <Link
             to=""

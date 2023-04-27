@@ -21,11 +21,11 @@ const EducationCard = ({ key, school }: Props) => {
 
       <div className="sm:flex sm:justify-between sm:gap-4">
         <div>
-          <h3 className="text-lg font-bold text-[#1DA1F2] sm:text-xl">
+          <h3 className="text-lg font-normal text-[#1DA1F2] sm:text-xl">
             {school.schoolName}
           </h3>
 
-          <p className={theme === "dark" ? "mt-1 text-lg font-semibold text-white" : "mt-1 text-lg font-semibold text-gray-500"}>
+          <p className={theme === "dark" ? "mt-1 text-lg font-medium text-white" : "mt-1 text-lg font-medium text-gray-500"}>
             {school.subHeader}
           </p>
           <p className={theme === "dark" ? "mt-1 text-base font-normal text-white" : "mt-1 text-base font-normal text-gray-500"}>

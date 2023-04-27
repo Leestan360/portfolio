@@ -34,12 +34,12 @@ function App() {
         <NavBar onToggleTheme={toggleTheme} />
         <Home/>
         <Skills />
-        <Experience />
-        <Education />
-        <OpenSourceProject />
+        <Experience/>
         <BigProject/>
-        <Achievements />
-        <Blog />
+        <OpenSourceProject/>
+        <Education />
+        <Achievements/>
+        <Blog/>
         <Footer />
       </div>
   );

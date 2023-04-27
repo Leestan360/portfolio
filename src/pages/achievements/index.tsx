@@ -5,13 +5,13 @@ import AchievementCard from '../../components/achievement'
 
 const Achievements = () => {
     const achievementSectionStyle = "flex flex-col my-24"
-    const achievementHeaderStyle = "text-5xl font-[400] text-[#1DA1F2]"
+    const achievementHeaderStyle = "text-2xl font-light text-[#1DA1F2]"
     // const trial = "flex flex-wrap justify-between"
     const achievementCardContainerStyle = "flex flex-row justify-center pt-5 grid md:grid-cols-3 gap-9"
   return (
     <section className={achievementSectionStyle} id="achievements">
         <div className="w-auto">
-          <h1 className={achievementHeaderStyle}>Achievements</h1>
+          <h1 className={achievementHeaderStyle}>ACHIEVEMENTS</h1>
         </div>
         <div className={achievementCardContainerStyle}>
           {achievementsInfo.achievements.map((achievement, index) => (

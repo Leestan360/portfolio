@@ -12,27 +12,29 @@ const NavBar: React.FC<NavbarProps> = ({ onToggleTheme }) => {
         <i className="fa-regular fa-slash-forward"></i>
         <i className="fa-thin fa-greater-than"></i>
       </a>
-      <div aria-label="Footer Nav" className="">
+      <div aria-label="Footer Nav" className="font-light text-base">
         <a href="#skills" className="px-4 py-2  hover:bg-gray-100 hover:text-[#1DA1F2] ">
-          Skills
+          SKILLS
         </a>
         <a href="#experience" className="px-4 py-2 hover:bg-gray-100  hover:text-[#1DA1F2] ">
-          Work Experience
+          EXPERIENCE
         </a>
-        <a href="#education" className="px-4 py-2 hover:bg-gray-100 hover:text-[#1DA1F2] ">
-          Education
+        <a href="#featured-projects" className="px-4 py-2 hover:bg-gray-100 hover:text-[#1DA1F2] ">
+          FEATURED PROJECTS
         </a>
         <a href="#open-source" className="px-4 py-2 hover:bg-gray-100 hover:text-[#1DA1F2] ">
-          Open Source
+          OTHER PROJECTS
         </a>
-        <a href="#big-projects" className="px-4 py-2 hover:bg-gray-100 hover:text-[#1DA1F2] ">
-          Big Projects
+
+        <a href="#education" className="px-4 py-2 hover:bg-gray-100 hover:text-[#1DA1F2] ">
+          EDUCATION
         </a>
+
         <a href="#achievements" className="px-4 py-2 hover:bg-gray-100 hover:text-[#1DA1F2] ">
-          Achievements
+          ACHIEVEMENTS
         </a>
-        <a href="#blogs" className="px-4 py-2 hover:bg-gray-100 hover:text-[#1DA1F2] ">
-          Blogs
+        <a href="#musings" className="px-4 py-2 hover:bg-gray-100 hover:text-[#1DA1F2] ">
+          MUSINGS
         </a>
       </div>
 

@@ -5,12 +5,12 @@ import BigProjectCard from '../../components/bigproject'
 
 const BigProject = () => {
     const bigProjectSectionStyle = "flex flex-col my-24"
-    const bigProjectHeaderStyle = "text-5xl font-[400] text-[#1DA1F2]"
+    const bigProjectHeaderStyle = "text-2xl font-light text-[#1DA1F2]"
     const bigProjectCardContainerStyle = "flex flex-wrap justify-between pt-5 gap-y-7"
   return (
-    <section className={bigProjectSectionStyle} id="big-projects">
+    <section className={bigProjectSectionStyle} id="featured-projects">
         <div className="w-auto">
-          <h1 className={bigProjectHeaderStyle}>Big Projects</h1>
+          <h1 className={bigProjectHeaderStyle}>FEATURED PROJECTS</h1>
         </div>
         <div className={bigProjectCardContainerStyle}>
           {bigProjectsInfo.projects.map((blog, index) => (
