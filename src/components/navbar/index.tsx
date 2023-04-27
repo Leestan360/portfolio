@@ -25,6 +25,9 @@ const NavBar: React.FC<NavbarProps> = ({ onToggleTheme }) => {
         <a href="#open-source" className="px-4 py-2 hover:bg-gray-100 hover:text-[#1DA1F2] ">
           Open Source
         </a>
+        <a href="#big-projects" className="px-4 py-2 hover:bg-gray-100 hover:text-[#1DA1F2] ">
+          Big Projects
+        </a>
         <a href="#achievements" className="px-4 py-2 hover:bg-gray-100 hover:text-[#1DA1F2] ">
           Achievements
         </a>

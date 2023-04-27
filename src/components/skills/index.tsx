@@ -6,7 +6,7 @@ function Skills() {
       <img src="/homeImage.png" alt="image2" className=""></img>
       <div className="w-[48%]">
         <p className="text-5xl font-[400] text-[#1DA1F2] ">What I do</p>
-        <ul className="pb-10 py-1 text-2xl font-thin  ">
+        <ul className="pb-10 py-1 text-xl font-thin">
           <li className="py-2 ">
             Develop highly interactive Front end / User Interfaces for your web
             and mobile applications
