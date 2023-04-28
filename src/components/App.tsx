@@ -24,7 +24,7 @@ function App() {
 
   return (
       <div
-        className="px-32 font-aper"
+        className="md:px-32 font-aper py-3 xxs:px-5 xxs:py-2 xsm:px-8 sm:px-14"
         style={{
           backgroundColor: themeColors.background,
           color: themeColors.text,

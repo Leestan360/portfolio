@@ -12,7 +12,7 @@ const NavBar: React.FC<NavbarProps> = ({ onToggleTheme }) => {
         <i className="fa-regular fa-slash-forward"></i>
         <i className="fa-thin fa-greater-than"></i>
       </a>
-      <div aria-label="Footer Nav" className="font-light text-base">
+      <div aria-label="Footer Nav" className="font-light text-base xxs:hidden">
         <a href="#skills" className="px-4 py-2  hover:bg-gray-100 hover:text-[#1DA1F2] ">
           SKILLS
         </a>

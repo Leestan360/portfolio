@@ -5,8 +5,8 @@ import JDEntry from "./jdentry";
 
 const JDListing = () => {
   return (
-      <div className="w-[45%] ">
-        <p className="text-2xl font-light text-[#1DA1F2] ">SKILLS</p>
+      <div className="xl:w-[45%] xxs:w-full">
+        <p className="text-2xl font-light text-[#1DA1F2] xxs:text-center md:text-start">SKILLS</p>
         <ul className="pb-10 py-1 text-xl font-thin">
           {skillsInfo.jd.map((item, key) => (
             <JDEntry key={key} jd={item}/>
