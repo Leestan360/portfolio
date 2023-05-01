@@ -5,20 +5,23 @@ interface NavbarProps {
 }
 
 const NavBar: React.FC<NavbarProps> = ({ onToggleTheme }) => {
+  const [showMenu, setShowMenu] = React.useState(false);
+
+  const handleMenuClick = () => {
+    setShowMenu(!showMenu);
+  };
+
   return (
-    <div className="flex justify-between text-[1.2rem] py-6 ">
-      <a href="/">
+    <div className="flex justify-between text-[1.2rem] py-6">
+      <a href="/" className="my-auto">
         <i className="fa-thin fa-less-than"></i> Stanley Mayore /
         <i className="fa-regular fa-slash-forward"></i>
         <i className="fa-thin fa-greater-than"></i>
       </a>
-      <div
-        aria-label="Footer Nav"
-        className="font-light text-base xxs:hidden lg:block "
-      >
+      <div className="hidden md:flex md:items-center font-light text-base">
         <a
           href="#skills"
-          className="px-4 py-2  hover:bg-gray-100 hover:text-[#1DA1F2] "
+          className="px-4 py-2 hover:bg-gray-100 hover:text-[#1DA1F2] "
         >
           SKILLS
         </a>
@@ -61,11 +64,70 @@ const NavBar: React.FC<NavbarProps> = ({ onToggleTheme }) => {
           MUSINGS
         </a>
       </div>
-
       <i
-        className="fa-solid fa-moon cursor-pointer xxs:hidden lg:block"
+        className="fa-solid fa-moon cursor-pointer xxs:hidden md:block my-auto"
         onClick={onToggleTheme}
       ></i>
+      <div className="md:hidden">
+        {!showMenu ? (
+          <i
+            className="fa-solid fa-bars cursor-pointer"
+            onClick={handleMenuClick}
+          ></i>
+        ) : (
+          <i className="fa-solid fa-xmark cursor-pointer" onClick={handleMenuClick}></i>
+        )}
+      </div>
+      {showMenu && (
+        <div className="md:hidden absolute top-16 right-10 bg-[#171c28] shadow-lg">
+          <div className=" grid">
+            <a
+              href="#skills"
+              className="px-8 py-2 hover:bg-gray-100 hover:text-[#1DA1F2] "
+            >
+              SKILLS
+            </a>
+            <a
+              href="#experience"
+              className="px-8 py-2 hover:bg-gray-100  hover:text-[#1DA1F2] "
+            >
+              EXPERIENCE
+            </a>
+            <a
+              href="#featured-projects"
+              className="px-8 py-2 hover:bg-gray-100 hover:text-[#1DA1F2] "
+            >
+              FEATURED PROJECTS
+            </a>
+            <a
+              href="#open-source"
+              className="px-8 py-2 hover:bg-gray-100 hover:text-[#1DA1F2] "
+            >
+              OTHER PROJECTS
+            </a>
+
+            <a
+              href="#education"
+              className="px-8 py-2 hover:bg-gray-100 hover:text-[#1DA1F2] "
+            >
+              EDUCATION
+            </a>
+
+            <a
+              href="#achievements"
+              className="px-8 py-2 hover:bg-gray-100 hover:text-[#1DA1F2] "
+            >
+              ACHIEVEMENTS
+            </a>
+            <a
+              href="#musings"
+              className="px-8 py-2 hover:bg-gray-100 hover:text-[#1DA1F2] "
+            >
+              MUSINGS
+            </a>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
