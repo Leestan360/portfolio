@@ -12,35 +12,62 @@ const NavBar: React.FC<NavbarProps> = ({ onToggleTheme }) => {
         <i className="fa-regular fa-slash-forward"></i>
         <i className="fa-thin fa-greater-than"></i>
       </a>
-      <div aria-label="Footer Nav" className="font-light text-base xxs:hidden">
-        <a href="#skills" className="px-4 py-2  hover:bg-gray-100 hover:text-[#1DA1F2] ">
+      <div
+        aria-label="Footer Nav"
+        className="font-light text-base xxs:hidden lg:block "
+      >
+        <a
+          href="#skills"
+          className="px-4 py-2  hover:bg-gray-100 hover:text-[#1DA1F2] "
+        >
           SKILLS
         </a>
-        <a href="#experience" className="px-4 py-2 hover:bg-gray-100  hover:text-[#1DA1F2] ">
+        <a
+          href="#experience"
+          className="px-4 py-2 hover:bg-gray-100  hover:text-[#1DA1F2] "
+        >
           EXPERIENCE
         </a>
-        <a href="#featured-projects" className="px-4 py-2 hover:bg-gray-100 hover:text-[#1DA1F2] ">
+        <a
+          href="#featured-projects"
+          className="px-4 py-2 hover:bg-gray-100 hover:text-[#1DA1F2] "
+        >
           FEATURED PROJECTS
         </a>
-        <a href="#open-source" className="px-4 py-2 hover:bg-gray-100 hover:text-[#1DA1F2] ">
+        <a
+          href="#open-source"
+          className="px-4 py-2 hover:bg-gray-100 hover:text-[#1DA1F2] "
+        >
           OTHER PROJECTS
         </a>
 
-        <a href="#education" className="px-4 py-2 hover:bg-gray-100 hover:text-[#1DA1F2] ">
+        <a
+          href="#education"
+          className="px-4 py-2 hover:bg-gray-100 hover:text-[#1DA1F2] "
+        >
           EDUCATION
         </a>
 
-        <a href="#achievements" className="px-4 py-2 hover:bg-gray-100 hover:text-[#1DA1F2] ">
+        <a
+          href="#achievements"
+          className="px-4 py-2 hover:bg-gray-100 hover:text-[#1DA1F2] "
+        >
           ACHIEVEMENTS
         </a>
-        <a href="#musings" className="px-4 py-2 hover:bg-gray-100 hover:text-[#1DA1F2] ">
+        <a
+          href="#musings"
+          className="px-4 py-2 hover:bg-gray-100 hover:text-[#1DA1F2] "
+        >
           MUSINGS
         </a>
       </div>
 
-      <i className="fa-solid fa-moon cursor-pointer" onClick={onToggleTheme}></i>
+      <i
+        className="fa-solid fa-moon cursor-pointer xxs:hidden lg:block"
+        onClick={onToggleTheme}
+      ></i>
     </div>
   );
-}
+};
 
 export default NavBar;

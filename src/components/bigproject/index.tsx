@@ -12,7 +12,7 @@ const BigProjectCard = ({key, project}: Props) => {
   const { theme } = React.useContext(ThemeContext);
 
   return (
-    <div key={key} className="w-[32%] border border-gray-100 px-5 py-6 rounded-lg shadow-lg hover:shadow-xl cursor-pointer">
+    <div key={key} className={theme === "dark" ? "w-[32%] border border-gray-100 px-5 py-6 rounded-lg hover:shadow-md hover:shadow-white shadow-white shadow-sm cursor-pointer" : "w-[32%] border border-gray-100 px-5 py-6 rounded-lg shadow-lg hover:shadow-xl cursor-pointer"}>
         <p className="text-center py-2 text-[2rem] text-[#1DA1F2] font-normal">{project.projectname}</p>
         <p className="text-center text-[1.5rem] font-normal text-[#1DA1F2] ">{project.projectname}</p>
         <p className={theme === "dark" ? "text-center my-4 font-light text-white" : "text-center my-4 font-light text-gray-500"}>{project.description}</p>
