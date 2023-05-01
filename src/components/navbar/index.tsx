@@ -12,13 +12,13 @@ const NavBar: React.FC<NavbarProps> = ({ onToggleTheme }) => {
   };
 
   return (
-    <div className="flex justify-between text-[1.2rem] py-6">
+    <div className="flex justify-between text-[1.2rem] py-6 ">
       <a href="/" className="my-auto">
         <i className="fa-thin fa-less-than"></i> Stanley Mayore /
         <i className="fa-regular fa-slash-forward"></i>
         <i className="fa-thin fa-greater-than"></i>
       </a>
-      <div className="hidden md:flex md:items-center font-light text-base">
+      <div className="hidden xl:flex xl:items-center font-light xl:text-[0.8rem] 2xl:text-base">
         <a
           href="#skills"
           className="px-4 py-2 hover:bg-gray-100 hover:text-[#1DA1F2] "
@@ -65,10 +65,10 @@ const NavBar: React.FC<NavbarProps> = ({ onToggleTheme }) => {
         </a>
       </div>
       <i
-        className="fa-solid fa-moon cursor-pointer xxs:hidden md:block my-auto"
+        className="fa-solid fa-moon cursor-pointer xxs:hidden xl:block my-auto"
         onClick={onToggleTheme}
       ></i>
-      <div className="md:hidden">
+      <div className="xl:hidden">
         {!showMenu ? (
           <i
             className="fa-solid fa-bars cursor-pointer"
@@ -79,7 +79,7 @@ const NavBar: React.FC<NavbarProps> = ({ onToggleTheme }) => {
         )}
       </div>
       {showMenu && (
-        <div className="md:hidden absolute top-16 right-10 bg-[#171c28] shadow-lg">
+        <div className="xl:hidden absolute top-16 right-10 bg-[#171c28] shadow-lg py-4">
           <div className=" grid">
             <a
               href="#skills"
