@@ -29,6 +29,7 @@ export interface BigProjectType {
     projectname: string;
     description: string;
     footerlink: Array<any>
+    stack: Array<any>
 
 }
 

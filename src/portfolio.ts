@@ -295,8 +295,10 @@ const bigProjectsInfo = {
           name: "Visit Website",
           url: "http://saayahealth.com/"
         }
-        //  you can add extra buttons here.
-      ]
+        
+      ],
+      //  Only top 3 stack skills recommended here.
+      stack: ["Python", "JavaScript", "TypeS"]
     },
     {
       // image: require("./assets/images/nextuLogo.webp"),
@@ -307,7 +309,9 @@ const bigProjectsInfo = {
           name: "Visit Website",
           url: "http://nextu.se/"
         }
-      ]
+      ],
+      //  Only top 3 stack skills recommended here.
+      stack: ["Python", "JavaScript", "TypeS"]
     },
     {
       // image: require("./assets/images/saayaHealthLogo.webp"),
@@ -319,7 +323,9 @@ const bigProjectsInfo = {
           url: "http://saayahealth.com/"
         }
         //  you can add extra buttons here.
-      ]
+      ],
+      //  Only top 3 stack skills recommended here.
+      stack: ["Python", "JavaScript", "TypeS"]
     },
     {
       // image: require("./assets/images/saayaHealthLogo.webp"),
@@ -331,7 +337,9 @@ const bigProjectsInfo = {
           url: "http://saayahealth.com/"
         }
         //  you can add extra buttons here.
-      ]
+      ],
+      //  Only top 3 stack skills recommended here.
+      stack: ["Python", "JavaScript", "TypeS"]
     }
   ],
   display: true // Set false to hide this section, defaults to true
