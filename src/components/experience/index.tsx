@@ -18,7 +18,7 @@ const ExperienceCard = ({ key, work }: Props) => {
     <div
       key={key}
       id="parent"
-      className={theme === "dark" ? "" : ""}
+      className={theme === "dark" ? "bg-[#212839] border border-[#2A3349] rounded-lg p-2 hover:shadow-md hover:shadow-[#2A3349]" : ""}
     >
       <span id="child" className="absolute inset-x-0 bottom-0 h-2"></span>
       <div className="sm:flex sm:justify-between sm:gap-4 mb-4 pb-4">
