@@ -17,7 +17,7 @@ const EducationCard = ({ key, school }: Props) => {
     <div
       key={key}
       id="parent"
-      className={theme === "dark" ? "relative block overflow-hidden p-4 sm:p-6 lg:p-8" : "relative block overflow-hidden p-4 sm:p-6 lg:p-8"}
+      className={theme === "dark" ? "relative block overflow-hidden " : "relative block overflow-hidden "}
     >
       <span id="child" className="absolute inset-x-0 bottom-0 h-2"></span>
 

@@ -15,7 +15,7 @@ const BlogCard = ({ key, blog }: Props) => {
   return (
     <article
       key={key}
-      className={theme === "dark" ? "  p-2  cursor-pointer sm:p-6 lg:p-8" : "  p-2 border border-gray-100 hover:shadow-xl rounded-lg shadow-lg  cursor-pointer sm:p-6 lg:p-8"}
+      className={theme === "dark" ? "  p-2  cursor-pointer " : "  p-2 border border-gray-100 hover:shadow-xl rounded-lg shadow-lg  cursor-pointer"}
     >
       <div className="flex items-start sm:gap-8">
         <div

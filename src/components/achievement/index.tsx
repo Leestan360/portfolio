@@ -14,11 +14,11 @@ const AchievementCard = ({key, achievement}: Props) => {
   //  hover:shadow-md hover:shadow-white shadow-white shadow-sm rounded-lg border border-gray-100 
 
   return (
-      <div key={key} className={theme === "dark" ? "w-auto text-center py-4 px-4 my-6" : " w-auto text-center py-4 px-4 my-6"}>
+      <div key={key} className={theme === "dark" ? " " : ""}>
         <Link to="#">
-      <div className="cursor-pointer my-3 flex gap-x-5">
+      <div className="cursor-pointer my-3 flex justify-between">
         <p className="text-lg my-auto text-[#1DA1F2] font-normal">{achievement.title}</p>
-          <div className={theme === "dark" ? "text-xl text-[#1DA1F2]"  : "text-xl text-[#1DA1F2]"}>
+          <div className={theme === "dark" ? "text-xl text-[#1DA1F2] my-auto"  : "text-xl text-[#1DA1F2] my-auto"}>
             <VscArrowRight/>
           </div>
       </div>

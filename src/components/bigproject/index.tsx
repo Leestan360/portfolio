@@ -15,16 +15,16 @@ const BigProjectCard = ({key, project}: Props) => {
   // rounded-lg hover:shadow-md hover:shadow-white shadow-white shadow-sm border border-gray-100
 
   return (
-    <div key={key} className={theme === "dark" ? "w-[32%] px-2 py-5" : "w-[32%] px-2 py-5"}>
+    <div key={key} className="w-[32%]">
       <Link to="#">
-      <div className="cursor-pointer my-3 flex gap-x-5">
+      <div className="cursor-pointer my-3 flex justify-between">
         <p className="text-lg my-auto text-[#1DA1F2] font-normal">{project.projectname}</p>
-          <div className={theme === "dark" ? "text-xl text-[#1DA1F2]"  : "text-xl text-gray-500"}>
+          <div className={theme === "dark" ? "text-xl text-[#1DA1F2] my-auto"  : "text-xl text-gray-500 my-auto"}>
             <VscArrowRight/>
           </div>
       </div>
       </Link>
-        <p className={theme === "dark" ? "text-center my-3 font-light text-white" : "text-center my-4 font-light text-gray-500"}>{project.description}</p>
+        <p className={theme === "dark" ? "my-3 font-light text-white" : "my-4 font-light text-gray-500"}>{project.description}</p>
         <div className="flex justify-start">
           <Skills skills={project.stack}/>
               
