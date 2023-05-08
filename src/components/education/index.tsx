@@ -17,7 +17,7 @@ const EducationCard = ({ key, school }: Props) => {
     <div
       key={key}
       id="parent"
-      className={theme === "dark" ? "relative block overflow-hidden  cursor-pointer  p-4 sm:p-6 lg:p-8" : "relative block overflow-hidden border border-gray-100 hover:shadow-xl rounded-lg shadow-lg  cursor-pointer  p-4 sm:p-6 lg:p-8"}
+      className={theme === "dark" ? "relative block overflow-hidden p-4 sm:p-6 lg:p-8" : "relative block overflow-hidden p-4 sm:p-6 lg:p-8"}
     >
       <span id="child" className="absolute inset-x-0 bottom-0 h-2"></span>
 
@@ -35,13 +35,13 @@ const EducationCard = ({ key, school }: Props) => {
           </p>
         </div>
 
-        <div className="hidden sm:block sm:shrink-0">
+        {/* <div className="hidden sm:block sm:shrink-0">
           <img
             alt={`${school.schoolName}`}
             src="https://source.unsplash.com/mjRwhvqEC0U/600x600"
             className="border border-solid border-[#1DA1F2] h-24 w-24 rounded-full object-cover shadow-sm"
           />
-        </div>
+        </div> */}
       </div>
 
       <p className={theme === "dark" ? "mt-1 text-base font-thin text-white max-w-[70ch]" : "mt-1 text-base font-thin text-gray-500 max-w-[70ch]"}>
