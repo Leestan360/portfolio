@@ -126,6 +126,10 @@ const NavBar: React.FC<NavbarProps> = ({ onToggleTheme }) => {
               MUSINGS
             </a>
           </div>
+                <i
+        className="fa-solid fa-moon cursor-pointer px-8 py-2"
+        onClick={onToggleTheme}
+      ></i>
         </div>
       )}
     </div>

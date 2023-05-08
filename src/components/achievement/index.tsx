@@ -11,9 +11,10 @@ type Props = {
 
 const AchievementCard = ({key, achievement}: Props) => {
   const { theme } = React.useContext(ThemeContext);
+  //  hover:shadow-md hover:shadow-white shadow-white shadow-sm rounded-lg border border-gray-100 
 
   return (
-      <div key={key} className={theme === "dark" ? "border border-gray-100 w-auto text-center rounded-lg py-4 px-4 my-6 hover:shadow-md hover:shadow-white shadow-white shadow-sm cursor-pointer" : "border border-gray-100 w-auto text-center rounded-lg py-4 px-4 my-6 shadow-lg hover:shadow-xl cursor-pointer"}>
+      <div key={key} className={theme === "dark" ? "w-auto text-center py-4 px-4 my-6 cursor-pointer" : "border border-gray-100 w-auto text-center rounded-lg py-4 px-4 my-6 shadow-lg hover:shadow-xl cursor-pointer"}>
           <img src="/united-kingdom.png" alt="achievement1" className="w-12 mx-auto" />
           <p className="font-normal text-lg my-2 text-[#1DA1F2]">
             {achievement.title}
