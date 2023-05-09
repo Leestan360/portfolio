@@ -13,12 +13,13 @@ const ExperienceCard = ({ key, work }: Props) => {
   const { theme } = React.useContext(ThemeContext);
 
   // border border-gray-100 hover:shadow-md hover:shadow-white  shadow-white shadow-sm rounded-lg
+  // bg-[#171c28]
 
   return (
     <div
       key={key}
       id="parent"
-      className={theme === "dark" ? "bg-[#212839] border border-[#2A3349] rounded-lg p-2 drop-shadow-md hover:drop-shadow-lg hover:shadow-[#2A3349]" : ""}
+      className={theme === "dark" ? "bg-[#29292b] border border-[#29292b] hover:shadow-md hover:shadow-[#29292b]  shadow-[#29292b] shadow-sm rounded-lg px-6 py-4 cursor-pointer" : ""}
     >
       <span id="child" className="absolute inset-x-0 bottom-0 h-2"></span>
       <div className="sm:flex sm:justify-between sm:gap-4 mb-4 pb-4">
