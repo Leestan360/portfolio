@@ -1,7 +1,7 @@
 import React from "react";
 import { SchoolType } from "../../types";
-import Bullet from "../Bullets";
 import { ThemeContext } from "../../ThemeContext";
+import Bullet from "../bullet";
 
 type Props = {
   key: number;

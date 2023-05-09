@@ -1,8 +1,8 @@
 import React from "react";
 import { WorkType } from "../../types";
-import Bullet from "../Bullets";
 import Skills from "./stack";
 import { ThemeContext } from "../../ThemeContext";
+import Bullet from "../bullet";
 
 type Props = {
   key: number;
