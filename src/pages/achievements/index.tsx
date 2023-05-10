@@ -11,7 +11,7 @@ const Achievements = () => {
   return (
     <section className={achievementSectionStyle} id="achievements">
         <div className="w-auto">
-          <h1 className={achievementHeaderStyle}>ACHIEVEMENTS</h1>
+          <h1 className={achievementHeaderStyle}>{achievementsInfo.title}</h1>
         </div>
         <div className={achievementCardContainerStyle}>
           {achievementsInfo.achievements.map((achievement, index) => (

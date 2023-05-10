@@ -33,15 +33,6 @@ export interface BigProjectType {
 
 }
 
-export interface OpenSourceProjectType{
-    nodename: string;
-    description: string;
-    primarylanguage: string;
-    forkcount: number;
-    stargazers: number;
-    diskusage: string;
-}
-
 export interface AchievementType {
     title: string;
     subtitle: string; 
@@ -49,4 +40,26 @@ export interface AchievementType {
     imagealt: string;
     footerlink: Array<any>
 
+}
+
+
+interface GazerType {
+    totalCount: number
+}
+
+interface LanguageType {
+    name: string;
+    color: string;
+
+}
+
+export interface GitNodeType {
+    name: string;
+    description?: string;
+    forkCount?: number;
+    stargazers?: GazerType;
+    url?: string;
+    id?: string;
+    diskUsage?: number;
+    primaryLanguage?: LanguageType;
 }

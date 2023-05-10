@@ -37,8 +37,8 @@ const headLine = {
 // Skills Section
 
 const skillsInfo = {
-  title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  title: "SKILLS",
+  subTitle: "PROFICIENCIES",
   jd: [
     emoji(
       "⚡Develop highly interactive Front end / User Interfaces for your web and mobile applications"
@@ -152,6 +152,7 @@ https://fontawesome.com/icons?d=gallery */
 
 // Experience Section
 const workInfo = {
+  title: "EXPERIENCE",
   display: true, //Set it to true to show workExperiences Section
   experiences: [
     {
@@ -192,6 +193,7 @@ const workInfo = {
 // Education Section
 
 const educationInfo = {
+  title: "EDUCATION",
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
@@ -235,56 +237,14 @@ const educationInfo = {
 
 
 const openSourceProjectsInfo = {
-  title: "Open Source Projects",
-  projects: [
-    {
-      nodename: "Web Application",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      primarylanguage: "Python",
-      forkcount: 30,
-      stargazers: 50,
-      diskusage: "20MB"
-    },
-    {
-      nodename: "Web Application",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      primarylanguage: "JavaScript",
-      forkcount: 30,
-      stargazers: 50,
-      diskusage: "20MB"
-    },
-    {
-      nodename: "Web Application",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      primarylanguage: "TypeScript",
-      forkcount: 30,
-      stargazers: 50,
-      diskusage: "20MB"
-    },
-        {
-      nodename: "Web Application",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      primarylanguage: "Java",
-      forkcount: 30,
-      stargazers: 50,
-      diskusage: "20MB"
-    },
-    {
-      nodename: "Web Application",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      primarylanguage: "Java",
-      forkcount: 30,
-      stargazers: 50,
-      diskusage: "20MB"
-    },
-    
-  ]
+  title: "OTHER PROJECTS",
+  display: true
 }
 
 // BigProjects Section
 
 const bigProjectsInfo = {
-  title: "Big Projects",
+  title: "FEATURED PROJECTS",
   projects: [
     {
       // image: require("./assets/images/saayaHealthLogo.webp"),
@@ -348,7 +308,7 @@ const bigProjectsInfo = {
 
 // Achievements Section
 const achievementsInfo = {
-  // title: emoji("Achievements And Certifications 🏆 "),
+  title: "ACHIEVEMENTS",
   subtitle:
     "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
 
@@ -409,7 +369,7 @@ const achievementsInfo = {
 // Blogs Section
 
 const blogInfo = {
-  title: "Blogs",
+  title: "MUSINGS",
   subtitle:
     "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
   displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones

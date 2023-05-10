@@ -11,7 +11,7 @@ const Education = () => {
   return (
       <section className={educationSectionStyle} id="education">
         <div className="w-auto">
-          <h1 className={educationHeaderStyle}>EDUCATION</h1>
+          <h1 className={educationHeaderStyle}>{educationInfo.title}</h1>
         </div>
         
         <div className={educationCardContainerStyle}>

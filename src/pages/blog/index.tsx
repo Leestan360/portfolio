@@ -10,7 +10,7 @@ const Blog = () => {
   return (
     <section className={blogSectionStyle} id="musings">
         <div className="w-auto">
-          <h1 className={blogHeaderStyle}>MUSINGS</h1>
+          <h1 className={blogHeaderStyle}>{blogInfo.title}</h1>
         </div>
       <div className={blogCardContainerStyle}>
           {blogInfo.blogs.map((blog, index) => (
