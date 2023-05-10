@@ -8,8 +8,6 @@ const ERR = {
     "Github Username was found to be undefined. Please set all relevant environment variables.",
   requestFailed:
     "The request to GitHub didn't succeed. Check if GitHub token in your .env file is correct.",
-  requestFailedMedium:
-    "The request to Medium didn't succeed. Check if Medium username in your .env file is correct."
 };
 
 if (process.env.GITHUB_USERNAME === undefined) {
@@ -29,7 +27,7 @@ async function fetchProfileRequest(query: string) {
     return response;
   } catch (error: any) {
     // Handle the error, such as logging or displaying a friendly message
-    console.error(`Error making fetch github profile request: ${error.message}`);
+    console.error(`${ERR.requestFailed}: ${error.message}`);
     throw error;
   }
 }
