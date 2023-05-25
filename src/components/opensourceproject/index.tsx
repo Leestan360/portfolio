@@ -3,11 +3,11 @@ import { ThemeContext } from "../../ThemeContext";
 import { Link } from "react-router-dom";
 import { VscArrowRight } from "react-icons/vsc";
 import Element from "./gitinfo";
-import { GitNodeType } from '../../types'
+import { ProjectType } from '../../types'
 
 type Props = {
   key: number;
-  project: GitNodeType;
+  project: ProjectType;
 };
 
 const OpenSourceProjectCard = ({ key, project }: Props) => {
@@ -20,7 +20,7 @@ const OpenSourceProjectCard = ({ key, project }: Props) => {
       <Link to="#">
         <div className="cursor-pointer my-3 flex gap-x-5 justify-between">
           <p className="text-lg my-auto text-[#1DA1F2] font-normal ">
-            {project.name}
+            {project.node.name}
           </p>
           <div
             className={
@@ -40,7 +40,7 @@ const OpenSourceProjectCard = ({ key, project }: Props) => {
             : "pb-5 pt-2 text-base font-light text-gray-500"
         }
       >
-        {project.description}
+        {project.node.description}
       </p>
       <div
         className={
@@ -50,11 +50,11 @@ const OpenSourceProjectCard = ({ key, project }: Props) => {
         }
       >
         <div className="flex">
-          <Element element={project.primaryLanguage} />
-          <Element element={project.forkCount} />
-          <Element element={project.stargazers} />
+          <Element element={project.node.primaryLanguage} />
+          <Element element={project.node.forkCount} />
+          <Element element={project.node.stargazers} />
         </div>
-        <Element element={project.diskUsage} />
+        <Element element={project.node.diskUsage} />
       </div>
     </div>
   );

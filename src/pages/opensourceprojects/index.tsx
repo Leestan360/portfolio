@@ -1,6 +1,6 @@
-import React, { lazy, useState } from 'react'
+import React, { lazy, useEffect, useState } from 'react'
 import {openSourceProjectsInfo } from '../../portfolio'
-import { GitNodeType } from '../../types'
+import { ProjectType } from '../../types'
 
 
 const OpenSourceProject = () => {
@@ -8,33 +8,39 @@ const OpenSourceProject = () => {
     const openSourceProjectHeaderStyle = "text-2xl font-light text-[#1DA1F2]"
     const openSourceProjectCardContainerStyle = "flex flex-wrap justify-between gap-y-9 "
     const OpenSourceProjectCard = lazy(() => import("../../components/opensourceproject"));
-    const [repo, setRepo] = useState<GitNodeType[]>([]);
+    const [repo, setRepo] = useState<ProjectType[]>([]);
 
-const getRepoData = () => {
-  fetch("/public/profile.json")
-    .then((result) => {
-      if (result.ok) {
-        return result.json();
-      }
-      throw new Error("Error fetching profile data");
-    })
-    .then((response) => {
-      setRepo(response.data.user.pinnedItems.edges);
-    })
-    .catch((error) => {
-      console.error(
-        `${error.message} (because of this error, nothing is shown in place of Projects section. Also check if Projects section has been configured)`
-      );
-      setRepo([{ name: "Error" }]);
-    });
-};
+useEffect (() => {
+  const getRepoData = () => {
+    fetch("/public/profile.json")
+      .then((result) => {
+        if (result.ok) {
+          return result.json();
+        }
+        throw Error("Error fetching profile data");
+      })
+      .then((response) => {
+        setRepoFunction(response.data.user.pinnedItems.edges);
+      })
+      .catch((error) => {
+        console.error(
+          `${error.message} (because of this error, nothing is shown in place of Projects section. Also check if Projects section has been configured)`
+        );
+        setRepoFunction([{node : { name: "Error" }}]);
+      });
+  };
+  getRepoData();
+}, []);
 
-    getRepoData();
+function setRepoFunction(array: ProjectType[]){
+  setRepo(array)
+}
 
-    if (
+if (
     !(typeof repo === "string" || repo instanceof String) &&
     openSourceProjectsInfo.display
   ){
+    console.log(repo)
   return (
     <section className={openSourceProjectSectionStyle} id="open-source">
         <div className="w-auto">
