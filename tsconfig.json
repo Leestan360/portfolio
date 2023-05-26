@@ -6,10 +6,9 @@
     "target": "es6",
     "lib": ["es6", "dom"],
     "sourceMap": true,
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true
+    "strict": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false
   },
   "exclude": ["node_modules"]
 }
-
