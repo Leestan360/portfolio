@@ -1,5 +1,4 @@
 import React, { lazy, useEffect, useState } from 'react'
-import axios from 'axios'
 import { openSourceProjectsInfo } from '../../portfolio'
 import { ProjectType } from '../../types'
 const OpenSourceProjectCard = lazy(() => import('../../components/opensourceproject'))
@@ -12,18 +11,17 @@ const OpenSourceProject = () => {
 
   useEffect(() => {
     const getRepoData = () => {
-      axios
-        .get('/profile.json')
+      fetch('/profile.json')
         .then((result) => {
           console.log(result)
-          // if (result.ok) {
-          return result
-          // }
-          // throw Error('Error fetching profile data')
+          if (result.ok) {
+          return result.json()
+          }
+          throw Error('Error fetching profile data')
         })
         .then((response) => {
           console.log(response)
-          setRepo(response.data.data.user.pinnedItems.edges)
+          setRepo(response.data.user.pinnedItems.edges)
         })
         .catch((error) => {
           console.error(

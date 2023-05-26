@@ -53,9 +53,9 @@ const OpenSourceProjectCard = ({ key, project }: Props) => {
         }
       >
         <div className='flex'>
-          <Element element={project.node.primaryLanguage.name} />
+          <Element element={project.node.primaryLanguage?.name} />
           <Element element={project.node.forkCount} />
-          <Element element={project.node.stargazers.totalCount} />
+          <Element element={project.node.stargazers?.totalCount} />
         </div>
         <Element element={project.node.diskUsage} />
       </div>
