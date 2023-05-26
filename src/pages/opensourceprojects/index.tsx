@@ -1,61 +1,56 @@
 import React, { lazy, useEffect, useState } from 'react'
-import {openSourceProjectsInfo } from '../../portfolio'
+import { openSourceProjectsInfo } from '../../portfolio'
 import { ProjectType } from '../../types'
-
+const OpenSourceProjectCard = lazy(() => import('../../components/opensourceproject'))
 
 const OpenSourceProject = () => {
-    const openSourceProjectSectionStyle = "flex flex-col my-24"
-    const openSourceProjectHeaderStyle = "text-2xl font-light text-[#1DA1F2]"
-    const openSourceProjectCardContainerStyle = "flex flex-wrap justify-between gap-y-9 "
-    const OpenSourceProjectCard = lazy(() => import("../../components/opensourceproject"));
-    const [repo, setRepo] = useState<ProjectType[]>([]);
+  const openSourceProjectSectionStyle = 'flex flex-col my-24'
+  const openSourceProjectHeaderStyle = 'text-2xl font-light text-[#1DA1F2]'
+  const openSourceProjectCardContainerStyle = 'flex flex-wrap justify-between gap-y-9 '
+  const [repo, setRepo] = useState<ProjectType[]>([])
 
-useEffect (() => {
-  const getRepoData = () => {
-    fetch("/public/profile.json")
-      .then((result) => {
-        if (result.ok) {
-          return result.json();
-        }
-        throw Error("Error fetching profile data");
-      })
-      .then((response) => {
-        setRepoFunction(response.data.user.pinnedItems.edges);
-      })
-      .catch((error) => {
-        console.error(
-          `${error.message} (because of this error, nothing is shown in place of Projects section. Also check if Projects section has been configured)`
-        );
-        setRepoFunction([{node : { name: "Error" }}]);
-      });
-  };
-  getRepoData();
-}, []);
+  useEffect(() => {
+    const getRepoData = () => {
+      fetch('/profile.json')
+        .then((result) => {
+          console.log(result)
+          if (result.ok) {
+          return result.json()
+          }
+          throw Error('Error fetching profile data')
+        })
+        .then((response) => {
+          console.log(response)
+          setRepo(response.data.user.pinnedItems.edges)
+        })
+        .catch((error) => {
+          console.error(
+            `${error.message} (because of this error, nothing is shown in place of Projects section. Also check if Projects section has been configured)`
+          )
+          setRepo([{ node: { name: 'Error' } }])
+        })
+    }
 
-function setRepoFunction(array: ProjectType[]){
-  setRepo(array)
-}
+    getRepoData()
+  }, [])
 
-if (
-    !(typeof repo === "string" || repo instanceof String) &&
-    openSourceProjectsInfo.display
-  ){
+  if (!(typeof repo === 'string' || repo instanceof String) && openSourceProjectsInfo.display) {
     console.log(repo)
-  return (
-    <section className={openSourceProjectSectionStyle} id="open-source">
-        <div className="w-auto">
+    return (
+      <section className={openSourceProjectSectionStyle} id='open-source'>
+        <div className='w-auto'>
           <h1 className={openSourceProjectHeaderStyle}>OTHER PROJECTS</h1>
         </div>
         <div className={openSourceProjectCardContainerStyle}>
           {repo.map((project, index) => (
-            <OpenSourceProjectCard key={index} project={project}/>
+            <OpenSourceProjectCard key={index} project={project} />
           ))}
         </div>
-    </section>
-  )}
-  else {
-      return null;
-    }
+      </section>
+    )
+  } else {
+    return null
+  }
 }
 
 export default OpenSourceProject
