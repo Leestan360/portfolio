@@ -53,7 +53,7 @@ interface LanguageType {
 
 }
 
-interface GitNodeType {
+export interface GitNodeType {
     name: string;
     description?: string;
     forkCount?: number;
