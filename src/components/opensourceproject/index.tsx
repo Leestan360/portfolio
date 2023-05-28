@@ -4,10 +4,36 @@ import { Link } from 'react-router-dom'
 import { VscArrowRight } from 'react-icons/vsc'
 import Element from './gitinfo'
 import { ProjectType } from '../../types'
+import {SiJupyter, SiHtml5, SiPython, SiJavascript, SiTypescript} from 'react-icons/si';
+import {FaJava, FaCode} from 'react-icons/fa';
 
 type Props = {
   key: number
   project: ProjectType
+}
+
+function returnIcon(language: any){
+  if (RegExp("Jupyter").test(language)){
+    return SiJupyter
+  }
+  else if (RegExp("Python").test(language)){
+    return SiPython
+  }
+  else if (RegExp("HTML").test(language)){
+    return SiHtml5
+  }
+  else if (RegExp("Javascript").test(language)){
+    return SiJavascript
+  }
+  else if (RegExp("Typescript").test(language)){
+    return SiTypescript
+  }
+  else if (RegExp("Java")){
+    return FaJava
+  }
+  else{
+    return FaCode
+  }
 }
 
 const OpenSourceProjectCard = ({ key, project }: Props) => {
@@ -20,7 +46,7 @@ const OpenSourceProjectCard = ({ key, project }: Props) => {
       key={key}
       className={
         theme === 'dark'
-          ? 'w-[23%] bg-[#1F2938] border border-[#1F2938] hover:shadow-md hover:shadow-[#1F2938]  shadow-[#1F2938] shadow-sm rounded-lg px-6 py-2 cursor-pointer'
+          ? 'w-[30%] bg-[#1F2938] border border-[#1F2938] hover:shadow-md hover:shadow-[#1F2938]  shadow-[#1F2938] shadow-sm rounded-lg px-6 py-2 cursor-pointer'
           : ''
       }
     >
@@ -39,8 +65,8 @@ const OpenSourceProjectCard = ({ key, project }: Props) => {
       <p
         className={
           theme === 'dark'
-            ? 'pb-5 pt-2 text-base font-light text-white'
-            : 'pb-5 pt-2 text-base font-light text-gray-500'
+            ? 'pb-5 pt-2 text-base font-light text-white truncate'
+            : 'pb-5 pt-2 text-base font-light text-gray-500 truncate'
         }
       >
         {project.node.description}
@@ -53,11 +79,10 @@ const OpenSourceProjectCard = ({ key, project }: Props) => {
         }
       >
         <div className='flex'>
-          <Element element={project.node.primaryLanguage?.name} />
+          <Element element={project.node.primaryLanguage?.name} Icon={returnIcon(project.node.primaryLanguage?.name)}/>
           <Element element={project.node.forkCount} />
           <Element element={project.node.stargazers?.totalCount} />
         </div>
-        <Element element={project.node.diskUsage} />
       </div>
     </div>
   )
