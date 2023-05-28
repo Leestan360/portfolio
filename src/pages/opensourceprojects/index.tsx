@@ -6,7 +6,7 @@ const OpenSourceProjectCard = lazy(() => import('../../components/opensourceproj
 const OpenSourceProject = () => {
   const openSourceProjectSectionStyle = 'flex flex-col my-24'
   const openSourceProjectHeaderStyle = 'text-2xl font-light text-[#1DA1F2]'
-  const openSourceProjectCardContainerStyle = 'flex flex-wrap justify-between gap-y-9 '
+  const openSourceProjectCardContainerStyle = 'flex flex-wrap justify-between pt-5 gap-y-9 '
   const [repo, setRepo] = useState<ProjectType[]>([])
 
   useEffect(() => {

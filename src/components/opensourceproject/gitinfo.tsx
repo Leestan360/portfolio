@@ -11,7 +11,7 @@ const Element = ({ element, style, Icon }: Props): JSX.Element | any => {
 return element ? (
     <div className="flex">
       { Icon && (
-      <div className="text-sm">
+      <div className="text-sm my-auto">
         <Icon/>
       </div>
       )}
