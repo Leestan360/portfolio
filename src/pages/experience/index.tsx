@@ -6,7 +6,7 @@ import { workInfo } from '../../portfolio';
 const Experience = () => {
     const experienceSectionStyle = "flex flex-col"
     const experienceHeaderStyle = "text-2xl font-light text-[#1DA1F2]"
-    const experienceCardContainerStyle = "flex flex-row justify-between grid md:grid-cols-2 pt-5 gap-y-9 gap-x-16"
+    const experienceCardContainerStyle = "flex flex-row justify-between grid md:grid-cols-2 pt-5 gap-9"
   return (
     <section className={experienceSectionStyle} id="experience">
         <div className='w-auto'>

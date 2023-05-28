@@ -19,7 +19,7 @@ const ExperienceCard = ({ key, work }: Props) => {
     <div
       key={key}
       id="parent"
-      className={theme === "dark" ? "bg-[#1F2938] border border-[#1F2938] hover:shadow-md hover:shadow-[#1F2938]  shadow-[#1F2938] shadow-sm rounded-lg px-6 py-4 cursor-pointer" : ""}
+      className={theme === "dark" ? "w-[45%] bg-[#1F2938] border border-[#1F2938] hover:shadow-md hover:shadow-[#1F2938]  shadow-[#1F2938] shadow-sm rounded-lg px-6 py-4 cursor-pointer  " : ""}
     >
       <span id="child" className="absolute inset-x-0 bottom-0 h-2"></span>
       <div className="sm:flex sm:justify-between sm:gap-4 mb-4 pb-4">
@@ -92,8 +92,8 @@ const ExperienceCard = ({ key, work }: Props) => {
           </p>
         </div>
       </div>
-      <div className="pt-5 md:justify-items-start md:flex md:justify-start">
-        <span className="mt-1 text-sm font-thin">
+      <div className="pt-5 ">
+        <span className="mt-1 text-sm font-thin flex flex-wrap">
           <Skills skills={work.stack}></Skills>
         </span>
       </div>

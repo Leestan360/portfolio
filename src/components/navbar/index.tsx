@@ -11,6 +11,10 @@ const NavBar: React.FC<NavbarProps> = ({ onToggleTheme }) => {
     setShowMenu(!showMenu);
   };
 
+  const scrollToPage = () => {
+    window.scrollTo({ behavior: "smooth" });
+  };
+
   return (
     <div className="flex justify-between text-[1.2rem] py-6 ">
       <a href="/" className="my-auto">
@@ -22,6 +26,7 @@ const NavBar: React.FC<NavbarProps> = ({ onToggleTheme }) => {
         <a
           href="#skills"
           className="px-4 py-2 hover:bg-gray-100 hover:text-[#1DA1F2] "
+          onClick={scrollToPage}
         >
           SKILLS
         </a>

@@ -40,13 +40,13 @@ const OpenSourceProjectCard = ({ key, project }: Props) => {
   const { theme } = React.useContext(ThemeContext);
 
   // hover:shadow-md hover:shadow-white shadow-white shadow-sm rounded-lg  border border-gray-100
-  console.log(project);
+
   return (
     <div
       key={key}
       className={
         theme === "dark"
-          ? "w-[30%] bg-[#1F2938] border border-[#1F2938] hover:shadow-md hover:shadow-[#1F2938]  shadow-[#1F2938] shadow-sm rounded-lg px-6 py-2 cursor-pointer"
+          ? "lg:w-[30%] xxs:w-[100%] bg-[#1F2938] border border-[#1F2938] hover:shadow-md hover:shadow-[#1F2938]  shadow-[#1F2938] shadow-sm rounded-lg px-6 py-2 cursor-pointer"
           : ""
       }
     >

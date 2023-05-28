@@ -13,14 +13,12 @@ const OpenSourceProject = () => {
     const getRepoData = () => {
       fetch('/profile.json')
         .then((result) => {
-          console.log(result)
           if (result.ok) {
           return result.json()
           }
           throw Error('Error fetching profile data')
         })
         .then((response) => {
-          console.log(response)
           setRepo(response.data.user.pinnedItems.edges)
         })
         .catch((error) => {
@@ -35,7 +33,6 @@ const OpenSourceProject = () => {
   }, [])
 
   if (!(typeof repo === 'string' || repo instanceof String) && openSourceProjectsInfo.display) {
-    console.log(repo)
     return (
       <section className={openSourceProjectSectionStyle} id='open-source'>
         <div className='w-auto'>
