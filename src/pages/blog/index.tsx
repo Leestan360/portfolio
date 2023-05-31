@@ -6,7 +6,7 @@ import { blogInfo } from '../../portfolio'
 const Blog = () => {
     const blogSectionStyle = "flex flex-col my-24"
     const blogHeaderStyle = "text-2xl font-light text-[#1DA1F2]"
-    const blogCardContainerStyle = "flex flex-row justify-center pt-5 grid md:grid-cols-3 gap-9"
+    const blogCardContainerStyle = "flex flex-wrap justify-between pt-5 gap-y-9"
   return (
     <section className={blogSectionStyle} id="musings">
         <div className="w-auto">

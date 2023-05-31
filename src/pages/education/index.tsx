@@ -7,7 +7,7 @@ import { educationInfo } from '../../portfolio'
 const Education = () => {
     const educationSectionStyle = "flex flex-col my-24"
     const educationHeaderStyle = "text-2xl font-light text-[#1DA1F2]"
-    const educationCardContainerStyle = "flex flex-row justify-center pt-5 grid md:grid-cols-2 gap-9"
+    const educationCardContainerStyle = "flex flex-wrap justify-between pt-5 gap-y-7"
   return (
       <section className={educationSectionStyle} id="education">
         <div className="w-auto">
