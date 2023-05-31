@@ -7,7 +7,7 @@ const Achievements = () => {
     const achievementSectionStyle = "flex flex-col my-24"
     const achievementHeaderStyle = "text-2xl font-light text-[#1DA1F2]"
     // const trial = "flex flex-wrap justify-between"
-    const achievementCardContainerStyle = "flex flex-row justify-center pt-5 grid md:grid-cols-3 gap-9"
+    const achievementCardContainerStyle = "flex flex-wrap justify-between pt-5 gap-y-7"
   return (
     <section className={achievementSectionStyle} id="achievements">
         <div className="w-auto">
