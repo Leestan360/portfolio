@@ -25,7 +25,7 @@ const BigProjectCard = ({key, project}: Props) => {
       </div>
       </Link>
         <p className={theme === "dark" ? "my-3 font-light text-white" : "my-4 font-light text-gray-500"}>{project.description}</p>
-        <div className="flex justify-start">
+        <div className="flex flex-wrap">
           <Skills skills={project.stack}/>
               
 
