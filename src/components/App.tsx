@@ -23,6 +23,8 @@ function App() {
   // bg-[#171c28]
 
   return (
+    <div>
+      <NavBar onToggleTheme={toggleTheme}  />
       <div
         className="md:px-32 xl:px-40 font-aper py-3 xxs:px-5 xxs:py-2 xsm:px-8 sm:px-14"
         style={{
@@ -31,7 +33,7 @@ function App() {
         }}
       >
         <HelmetTitle title={title} />
-        <NavBar onToggleTheme={toggleTheme} />
+        
         <Home/>
         <Skills />
         <Experience/>
@@ -41,7 +43,7 @@ function App() {
         <Achievements/>
         <Blog/>
         <Footer />
-      </div>
+      </div></div>
   );
 }
 
