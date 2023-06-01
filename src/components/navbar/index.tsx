@@ -108,24 +108,28 @@ const NavBar: React.FC<NavbarProps> = ({ onToggleTheme }) => {
             <a
               href="#skills"
               className="px-8 py-2 hover:bg-gray-100 hover:text-[#1DA1F2] "
+              onClick={handleMenuClick}
             >
               SKILLS
             </a>
             <a
               href="#experience"
               className="px-8 py-2 hover:bg-gray-100  hover:text-[#1DA1F2] "
+              onClick={handleMenuClick}
             >
               EXPERIENCE
             </a>
             <a
               href="#featured-projects"
               className="px-8 py-2 hover:bg-gray-100 hover:text-[#1DA1F2] "
+              onClick={handleMenuClick}
             >
               FEATURED PROJECTS
             </a>
             <a
               href="#open-source"
               className="px-8 py-2 hover:bg-gray-100 hover:text-[#1DA1F2] "
+              onClick={handleMenuClick}
             >
               OTHER PROJECTS
             </a>
@@ -133,6 +137,7 @@ const NavBar: React.FC<NavbarProps> = ({ onToggleTheme }) => {
             <a
               href="#education"
               className="px-8 py-2 hover:bg-gray-100 hover:text-[#1DA1F2] "
+              onClick={handleMenuClick}
             >
               EDUCATION
             </a>
@@ -140,12 +145,14 @@ const NavBar: React.FC<NavbarProps> = ({ onToggleTheme }) => {
             <a
               href="#achievements"
               className="px-8 py-2 hover:bg-gray-100 hover:text-[#1DA1F2] "
+              onClick={handleMenuClick}
             >
               ACHIEVEMENTS
             </a>
             <a
               href="#musings"
               className="px-8 py-2 hover:bg-gray-100 hover:text-[#1DA1F2] "
+              onClick={handleMenuClick}
             >
               MUSINGS
             </a>
