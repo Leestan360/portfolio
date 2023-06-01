@@ -47,7 +47,7 @@ const OpenSourceProjectCard = ({ key, project }: Props) => {
       className={
         theme === "dark"
           ? "lg:w-[32%] xxs:w-[100%] bg-[#1F2938] border border-[#1F2938] hover:shadow-md hover:shadow-[#1F2938]  shadow-[#1F2938] shadow-sm rounded-lg px-6 py-2 cursor-pointer"
-          : ""
+          : "lg:w-[32%] xxs:w-[100%] bg-white border border-gray-300 hover:shadow-md hover:shadow-gray-300  shadow-gray-300 shadow-sm rounded-lg px-6 py-2 cursor-pointer"
       }
     >
       <Link to="#">

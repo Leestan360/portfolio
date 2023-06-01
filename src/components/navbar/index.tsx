@@ -1,10 +1,12 @@
 import * as React from "react";
+import { ThemeContext } from "../../ThemeContext";
 
 interface NavbarProps {
   onToggleTheme: () => void;
 }
 
 const NavBar: React.FC<NavbarProps> = ({ onToggleTheme }) => {
+  const { theme } = React.useContext(ThemeContext);
   const [showMenu, setShowMenu] = React.useState(false);
 
   const handleMenuClick = () => {
@@ -84,7 +86,7 @@ const NavBar: React.FC<NavbarProps> = ({ onToggleTheme }) => {
         )}
       </div>
       {showMenu && (
-        <div className="xl:hidden absolute top-16 right-10 bg-[#171c28] shadow-lg py-4">
+        <div className={theme === "dark" ? "xl:hidden absolute top-16 xxs:right-5 xsm:right-8 sm:right-14 md:right-32 bg-[#171c28] shadow-lg py-4 rounded-[4px]" : "xl:hidden absolute top-16 xxs:right-5 xsm:right-8 sm:right-14 md:right-32 bg-white shadow-lg py-4 rounded-[4px]"}>
           <div className=" grid">
             <a
               href="#skills"
