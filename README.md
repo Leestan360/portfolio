@@ -69,4 +69,4 @@ There are many hosting platforms and you should choose one that suits you.
 
 # Project Maintainers
 1. Stanley Mayore [GitHub](https://github.com/Leestan360), [Twitter](https://twitter.com/MayoreStanley), [LinkedIn](https://www.linkedin.com/in/stanley-mayore/)
-2. Bebeto Nyamwamu
+2. Bebeto Nyamwamu [GitHub](https://github.com/realonbebeto), [Twitter](https://twitter.com/realonbebeto), [LinkedIn](https://www.linkedin.com/in/realonbebeto/), [Portfolio](https://realonbebeto.github.io)
