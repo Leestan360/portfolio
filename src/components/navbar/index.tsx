@@ -1,6 +1,8 @@
 import * as React from "react";
 import { ThemeContext } from "../../ThemeContext";
 import { themes } from "../../theme";
+import { achievementsInfo, bigProjectsInfo, blogInfo, educationInfo, openSourceProjectsInfo, skillsInfo, workInfo } from "../../portfolio";
+
 
 interface NavbarProps {
   onToggleTheme: () => void;
@@ -38,45 +40,45 @@ const NavBar: React.FC<NavbarProps> = ({ onToggleTheme }) => {
           className="px-4 py-2 hover:bg-gray-100 hover:text-[#1DA1F2] "
           onClick={scrollToPage}
         >
-          SKILLS
+          {skillsInfo.title}
         </a>
         <a
           href="#experience"
           className="px-4 py-2 hover:bg-gray-100  hover:text-[#1DA1F2] "
         >
-          EXPERIENCE
+          {workInfo.title}
         </a>
         <a
           href="#featured-projects"
           className="px-4 py-2 hover:bg-gray-100 hover:text-[#1DA1F2] "
         >
-          FEATURED PROJECTS
+          {bigProjectsInfo.title}
         </a>
         <a
           href="#open-source"
           className="px-4 py-2 hover:bg-gray-100 hover:text-[#1DA1F2] "
         >
-          OTHER PROJECTS
+          {openSourceProjectsInfo.title}
         </a>
 
         <a
           href="#education"
           className="px-4 py-2 hover:bg-gray-100 hover:text-[#1DA1F2] "
         >
-          EDUCATION
+          {educationInfo.title}
         </a>
 
         <a
           href="#achievements"
           className="px-4 py-2 hover:bg-gray-100 hover:text-[#1DA1F2] "
         >
-          ACHIEVEMENTS
+          {achievementsInfo.title}
         </a>
         <a
           href="#musings"
           className="px-4 py-2 hover:bg-gray-100 hover:text-[#1DA1F2] "
         >
-          MUSINGS
+          {blogInfo.title}
         </a>
       </div>
       <i

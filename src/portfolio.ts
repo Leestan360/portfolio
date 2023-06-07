@@ -369,7 +369,7 @@ const achievementsInfo = {
 // Blogs Section
 
 const blogInfo = {
-  title: "MUSINGS",
+  title: "PUBLICATIONS",
   subtitle:
     "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
   displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones

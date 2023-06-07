@@ -1,5 +1,5 @@
 import React from 'react'
-import { headLine, socialMediaInfo } from '../../portfolio'
+import { achievementsInfo, bigProjectsInfo, blogInfo, educationInfo, headLine, openSourceProjectsInfo, skillsInfo, socialMediaInfo, workInfo } from '../../portfolio'
 import {SiLinkedin, SiGithub, SiTwitter, SiMinutemailer} from "react-icons/si"
 
 
@@ -19,43 +19,43 @@ const Footer = () => {
       <ul className="flex flex-wrap justify-center font-light">
         <li>
           <a className="px-4 py-2 hover:bg-gray-100 hover:text-[#1DA1F2]" href="#skills">
-            SKILLS
+            {skillsInfo.title}
           </a>
         </li>
 
         <li>
           <a className="px-4 py-2 hover:bg-gray-100 hover:text-[#1DA1F2]" href="#experience">
-            EXPERIENCE
+            {workInfo.title}
           </a>
         </li>
 
         <li>
           <a className="px-4 py-2 hover:bg-gray-100 hover:text-[#1DA1F2]" href="#featured-projects">
-            FEATURED PROECTS
+            {bigProjectsInfo.title}
           </a>
         </li>
 
         <li>
           <a className="px-4 py-2 hover:bg-gray-100 hover:text-[#1DA1F2]" href="#open-source">
-            OTHER PROJECTS
+            {openSourceProjectsInfo.title}
           </a>
         </li>
 
         <li>
           <a className="px-4 py-2 hover:bg-gray-100 hover:text-[#1DA1F2]" href="#education">
-            EDUCATION
+            {educationInfo.title}
           </a>
         </li>
 
         <li>
           <a className="px-4 py-2 hover:bg-gray-100 hover:text-[#1DA1F2]" href="#achievements">
-            ACHIEVEMENTS
+            {achievementsInfo.title}
           </a>
         </li>
 
         <li>
           <a className="px-4 py-2 hover:bg-gray-100 hover:text-[#1DA1F2]" href="#musings">
-            MUSINGS
+            {blogInfo.title}
           </a>
         </li>
       </ul>
