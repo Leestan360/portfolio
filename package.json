@@ -21,10 +21,12 @@
 		"web-vitals": "^2.1.4"
 	},
 	"scripts": {
-		"start": "react-scripts start",
-		"build": "react-scripts build",
+		"start": "ts-node fetch.js && react-scripts start",
+		"build": "ts-node fetch.js && react-scripts build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject",
+		"format": "prettier --write \"./**/*.{js,css,json,scss}\"",
+		"check-format": "prettier -c \"./**/*.{js,css,json,scss}\"",
 		"git": "ts-node ./gitprofile.ts"
 	},
 	"eslintConfig": {
