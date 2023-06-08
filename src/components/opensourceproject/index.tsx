@@ -11,6 +11,7 @@ import {
   SiJavascript,
   SiTypescript,
 } from "react-icons/si";
+import { DiRuby } from "react-icons/di";
 import { FaJava, FaCode } from "react-icons/fa";
 
 type Props = {
@@ -25,13 +26,16 @@ function returnIcon(language: any) {
     return SiPython;
   } else if (RegExp("HTML").test(language)) {
     return SiHtml5;
-  } else if (RegExp("Javascript").test(language)) {
+  } else if (RegExp("JavaScript").test(language)) {
     return SiJavascript;
-  } else if (RegExp("Typescript").test(language)) {
+  } else if (RegExp("TypeScript").test(language)) {
     return SiTypescript;
-  } else if (RegExp("Java")) {
+  } else if (RegExp("Java").test(language)) {
     return FaJava;
-  } else {
+  } else if (RegExp("Ruby").test(language)){
+    return DiRuby
+  }
+  else {
     return FaCode;
   }
 }
