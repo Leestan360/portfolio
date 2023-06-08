@@ -16,13 +16,15 @@
 		"react-icons": "^4.8.0",
 		"react-router-dom": "^6.9.0",
 		"react-scripts": "5.0.1",
+		"ts-node": "^10.9.1",
 		"web-vitals": "^2.1.4"
 	},
 	"scripts": {
 		"start": "react-scripts start",
 		"build": "react-scripts build",
 		"test": "react-scripts test",
-		"eject": "react-scripts eject"
+		"eject": "react-scripts eject",
+		"git": "ts-node ./gitprofile.ts"
 	},
 	"eslintConfig": {
 		"extends": [
