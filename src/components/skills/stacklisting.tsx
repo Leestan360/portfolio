@@ -5,9 +5,9 @@ import SkillEntry from "./skillentry";
 
 const StackListing = () => {
   return (
-        <div className="xl:w-[48%] xxs:w-full">
+        <div className="xl:w-[58%] xxs:w-full">
         <p className="text-2xl font-light text-[#1DA1F2] xxs:text-center md:text-start ">{skillsInfo.subTitle}</p>
-        <div className="flex py-3 flex-wrap gap-x-5">
+        <div className="flex py-3 flex-wrap gap-x-6">
           <div className="">
             <h4 className="text-lg font-bold text-[#1DA1F2]">Languages</h4>
             {skillsInfo.languageskills.map((skill, index) => (
