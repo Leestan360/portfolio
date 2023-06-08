@@ -23,7 +23,7 @@ const NavBar: React.FC<NavbarProps> = ({ onToggleTheme }) => {
 
   return (
     <div
-      className="sticky top-0 flex justify-between text-[1.2rem] py-6 bg-[#161D27] md:px-32 xl:px-40 font-aper xxs:px-5 xxs:py-2 xsm:px-8 sm:px-14"
+      className="sticky top-0 flex justify-between text-[1.2rem] py-6 bg-[#161D27] md:px-28 xl:px-36 font-aper xxs:px-5 xxs:py-2 xsm:px-8 sm:px-14"
       style={{
         backgroundColor: themeColors.background,
         color: themeColors.text,
