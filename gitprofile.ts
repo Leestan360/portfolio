@@ -1,5 +1,6 @@
 const fs = require('fs');
-const { process } = require('process');
+// const { process } = require('process');
+require('dotenv').config()
 const { graphql, GraphqlResponseError } = require("@octokit/graphql");
 
 const ERR = {
