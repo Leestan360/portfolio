@@ -258,7 +258,7 @@ const bigProjectsInfo = {
         
       ],
       //  Only top 3 stack skills recommended here.
-      stack: ["Python", "JavaScript", "TypeS"]
+      stack: ["Python", "JavaScript", "TypeScript"]
     },
     {
       // image: require("./assets/images/nextuLogo.webp"),
@@ -271,7 +271,7 @@ const bigProjectsInfo = {
         }
       ],
       //  Only top 3 stack skills recommended here.
-      stack: ["Python", "JavaScript", "TypeS"]
+      stack: ["Python", "JavaScript", "TypeScript"]
     },
     {
       // image: require("./assets/images/saayaHealthLogo.webp"),
@@ -285,7 +285,7 @@ const bigProjectsInfo = {
         //  you can add extra buttons here.
       ],
       //  Only top 3 stack skills recommended here.
-      stack: ["Python", "JavaScript", "TypeS"]
+      stack: ["Python", "JavaScript", "TypeScript"]
     },
     {
       // image: require("./assets/images/saayaHealthLogo.webp"),
@@ -299,7 +299,7 @@ const bigProjectsInfo = {
         //  you can add extra buttons here.
       ],
       //  Only top 3 stack skills recommended here.
-      stack: ["Python", "JavaScript", "TypeS"]
+      stack: ["Python", "JavaScript", "TypeScript"]
     }
   ],
   display: true // Set false to hide this section, defaults to true

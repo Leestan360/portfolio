@@ -3,7 +3,7 @@ import { BigProjectType } from '../../types'
 import { Link } from "react-router-dom";
 import { ThemeContext } from "../../ThemeContext";
 import {VscArrowRight} from "react-icons/vsc";
-import Skills from "../experience/stack";
+import Skills from "../../utils/stackpack";
 
 type Props = {
     key: number
@@ -27,8 +27,6 @@ const BigProjectCard = ({key, project}: Props) => {
         <p className={theme === "dark" ? "my-3 font-light text-white" : "my-4 font-light text-gray-500"}>{project.description}</p>
         <div className="flex flex-wrap">
           <Skills skills={project.stack}/>
-              
-
         {/* <Link
             to=""
             className={theme === "dark" ? "border-2 border-[#1DA1F2] text-base font-normal text-[#1DA1F2] hover:bg-[#1DA1F2] hover:text-white ease-in duration-300 px-3 py-1 rounded-md text-[0.8rem] " : "border-2 border-[#1DA1F2] text-base font-normal bg-white text-[#1DA1F2] hover:bg-[#1DA1F2] hover:text-white ease-in duration-300 px-3 py-1 rounded-md text-[0.8rem] "}

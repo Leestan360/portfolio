@@ -1,6 +1,6 @@
 import React from "react";
 import { WorkType } from "../../types";
-import Skills from "./stack";
+import Skills from "../../utils/stackpack";
 import { ThemeContext } from "../../ThemeContext";
 import Bullet from "../bullet";
 
