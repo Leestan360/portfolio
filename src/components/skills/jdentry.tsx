@@ -7,7 +7,7 @@ type Props = {
 
 const JDEntry = ({key, jd}: Props) => {
   return (
-        <li key={key} className="flex">
+        <li key={key} className="flex py-3">
             {jd}
         </li>
   )
