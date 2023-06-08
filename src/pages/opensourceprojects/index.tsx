@@ -11,7 +11,7 @@ const OpenSourceProject = () => {
 
   useEffect(() => {
     const getRepoData = () => {
-      fetch('/profile.json')
+      fetch('./profile.json')
         .then((result) => {
           if (result.ok) {
           return result.json()
@@ -19,18 +19,20 @@ const OpenSourceProject = () => {
           throw Error('Error fetching profile data')
         })
         .then((response) => {
-          setRepo(response.data.user.pinnedItems.edges)
+          setRepo(response.user.pinnedItems.edges)
         })
         .catch((error) => {
           console.error(
             `${error.message} (because of this error, nothing is shown in place of Projects section. Also check if Projects section has been configured)`
           )
           setRepo([{ node: { name: 'Error' } }])
+          openSourceProjectsInfo.display = false
         })
     }
-
     getRepoData()
   }, [])
+
+ 
 
   if (!(typeof repo === 'string' || repo instanceof String) && openSourceProjectsInfo.display) {
     return (

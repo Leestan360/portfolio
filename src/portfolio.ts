@@ -236,7 +236,7 @@ const educationInfo = {
 
 
 
-const openSourceProjectsInfo = {
+var openSourceProjectsInfo = {
   title: "OTHER PROJECTS",
   display: true
 }

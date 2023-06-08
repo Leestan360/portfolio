@@ -50,7 +50,7 @@ const OpenSourceProjectCard = ({ key, project }: Props) => {
           : "lg:w-[32%] xxs:w-[100%] bg-white border border-gray-300 hover:shadow-md hover:shadow-gray-300  shadow-gray-300 shadow-sm rounded-lg px-6 py-2 cursor-pointer"
       }
     >
-      <Link to="#">
+      <Link to={`${project.node.url}`}>
         <div className="cursor-pointer my-3 flex gap-x-5 justify-between">
           <p className="text-lg my-auto text-[#1DA1F2] font-normal ">
             {project.node.name}
