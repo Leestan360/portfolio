@@ -26,7 +26,7 @@ function App() {
     <div>
       <NavBar onToggleTheme={toggleTheme}  />
       <div
-        className="md:px-32 xl:px-40 font-aper py-3 xxs:px-5 xxs:py-2 xsm:px-8 sm:px-14"
+        className="md:px-28 xl:px-36 font-aper py-3 xxs:px-5 xxs:py-2 xsm:px-8 sm:px-14"
         style={{
           backgroundColor: themeColors.background,
           color: themeColors.text,
