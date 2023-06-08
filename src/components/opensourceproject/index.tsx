@@ -91,10 +91,10 @@ const OpenSourceProjectCard = ({ key, project }: Props) => {
             element={project.node.primaryLanguage?.name}
             Icon={returnIcon(project.node.primaryLanguage?.name)}
           />
-          <div className="flex">
+          {/* <div className="flex">
             <Element element={project.node.forkCount} />
             <Element element={project.node.stargazers?.totalCount} />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
