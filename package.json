@@ -21,13 +21,14 @@
 		"web-vitals": "^2.1.4"
 	},
 	"scripts": {
-		"start": "react-scripts start",
-		"build": "ts-node fetch.js && react-scripts build",
+		"predeploy": "npm run build",
+		"start": "ts-node gitprofile.ts && react-scripts start",
+		"build": "ts-node gitprofile.ts && react-scripts build",
+		"deploy": "gh-pages -b main -d build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject",
 		"format": "prettier --write \"./**/*.{js,css,json,scss}\"",
-		"check-format": "prettier -c \"./**/*.{js,css,json,scss}\"",
-		"git": "ts-node ./gitprofile.ts"
+		"check-format": "prettier -c \"./**/*.{js,css,json,scss}\""
 	},
 	"eslintConfig": {
 		"extends": [
