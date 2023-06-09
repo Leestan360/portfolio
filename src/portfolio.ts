@@ -14,12 +14,12 @@ const homeInfo = {
     "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with Reactjs / ReactNative, Rails, FastAPI and some other cool libraries and frameworks."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1NEXn1ttxKkbN3O0Gs-qga0icrhU4ZP2u/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
 const socialMediaInfo = {
-  github: "https://github.com/realonbebeto",
+  github: "https://github.com/Leestan360",
   linkedin: "https://www.linkedin.com/in/realonebebeto/",
   gmail: "nberbetto@gmail.com",
   gitlab: "https://gitlab.com/realonebebeto",
@@ -41,7 +41,7 @@ const skillsInfo = {
   subTitle: "PROFICIENCIES",
   jd: [
     emoji(
-      "⚡Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
     ),
     emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
     emoji(
