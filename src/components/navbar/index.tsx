@@ -29,7 +29,7 @@ const NavBar: React.FC<NavbarProps> = ({ onToggleTheme }) => {
         color: themeColors.text,
       }}
     >
-      <a href="/" className="my-auto">
+      <a href="/portfolio" className="my-auto">
         <i className="fa-thin fa-less-than"></i> Stanley Mayore /
         <i className="fa-regular fa-slash-forward"></i>
         <i className="fa-thin fa-greater-than"></i>
