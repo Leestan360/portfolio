@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# Developer Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## This is a fully responsive and awesome developer portlofio template
 
-## Available Scripts
+![Home](/public/homepageImage.jpg)
 
-In the project directory, you can run:
+Edit `src/portfolio.ts` to get your personal data. Also in `src/portfolio.ts`, you can edit the visibility of some sections by simply changing the display to `false`. The default theme is `dark mode`. If you need `light mode` as your default theme, edit `src/ThemeContext.tsx`. 
 
-### `npm start`
+The template is aimed to be open source. If you'd like to contribute, fork, create and after creating something awesome or solved an error, feel free to create a `Pull Request`.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Getting started
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```
+# Clone the repo
+git clone https://github.com/Leestan360/portfolio.git
 
-### `npm test`
+# Navigate into the repo
+cd portfolio
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Install dependencies
+npm install
 
-### `npm run build`
+# Start the server
+npm start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Linking portfolio to GitHub
+First, generate a classin GitHub personal access token by following the [instructions](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic). The token is like a password. Ensure to use it only in environment variables.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Second, on your editor:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Create a new file named `.env` in the root of the project directory.
+   
+   ```
+   Portfolio
+     - node_modules
+     - public
+     - src
+     - .env       <-- create it here
+     - .gitignore
+     - package-lock.json
+     - package.json
+     - README.md
+     - tailwind.config.js
+     - tsconfig.json
+   ```
 
-### `npm run eject`
+2. In the `.env` file, add your GITHUB_TOKEN and GITHUB_USERNAME.
+   
+   ```  
+   // .env
+   GITHUB_TOKEN = "YOUR GITHUB TOKEN"
+   GITHUB_USERNAME = "YOUR GITHUB USERNAME"
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Note: Open Source Projects section only show pinned items of your GitHub. Pin the projects you want to be displayed on your GitHub website account.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Deployment
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+After you're done with setting up the website, you should host it online in a hosting platform of your choice starting with GitHub pages. 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+There are many hosting platforms and you should choose one that suits you.
 
-## Learn More
+# Technologies Used
+1. [React](https://react.dev/)
+2. [TailwindCSS](https://tailwindcss.com/docs/guides/create-react-app)
+3. [Typescript](https://www.typescriptlang.org/)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Project Maintainers
+1. Stanley Mayore [GitHub](https://github.com/Leestan360), [Twitter](https://twitter.com/MayoreStanley), [LinkedIn](https://www.linkedin.com/in/stanley-mayore/)
+2. Bebeto Nyamwamu [GitHub](https://github.com/realonbebeto), [Twitter](https://twitter.com/realonbebeto), [LinkedIn](https://www.linkedin.com/in/realonbebeto/), [Portfolio](https://realonbebeto.github.io)
