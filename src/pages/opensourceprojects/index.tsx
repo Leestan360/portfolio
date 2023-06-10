@@ -11,7 +11,7 @@ const OpenSourceProject = () => {
 
   useEffect(() => {
     const getRepoData = () => {
-      fetch('./profile.json')
+      fetch('/portfolio/profile.json')
         .then((result) => {
           if (result.ok) {
           return result.json()
@@ -31,8 +31,6 @@ const OpenSourceProject = () => {
     }
     getRepoData()
   }, [])
-
- 
 
   if (!(typeof repo === 'string' || repo instanceof String) && openSourceProjectsInfo.display) {
     return (
