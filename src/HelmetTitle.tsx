@@ -7,6 +7,7 @@ interface HelmetTitleProps {
 }
 
 const HelmetTitle: React.FC<HelmetTitleProps> = ({ title }) => {
+  
   const name = homeInfo.username;
 
   return (
