@@ -24,7 +24,7 @@ const StackIcon = ({ Icon }: IconProps): JSX.Element | any => {
 
 const Skill = ({skills}: Props) : JSX.Element | any => {
   return skills ? skills.map((item, index) => (
-    <StackIcon index={index} Icon={returnIcon(item)}/>
+    <StackIcon key={index} index={index} Icon={returnIcon(item)}/>
     // <span key={index} className="border text-sm font-thin m-1 py-1 px-3 rounded-md border-[#1DA1F2] text-[#1DA1F2]">{item}</span>
   )): null
 }
