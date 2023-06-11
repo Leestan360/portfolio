@@ -5,8 +5,6 @@ import {SiLinkedin, SiGithub, SiTwitter, SiMinutemailer} from "react-icons/si"
 
 
 const Footer = () => {
-  const link1 = "https://realonbebeto.github.io"
-  const link2 = "https://realonbebeto.github.io"
   return (
     <footer aria-label="Site Footer" className="mt-16">
   <div className="mx-auto max-w-5xl px-4 py-2 sm:px-6 lg:px-8 border-t-3 border-gray-100">
@@ -120,9 +118,9 @@ const Footer = () => {
     </ul>
     <p className="mx-auto mt-4 max-w-md text-center leading-relaxed text-gray-500">
       Theme by <span>
-        <a href={`${link2}`} rel="noreferrer" target='_blank'>lee</a>
+        <a href="https://github.com/Leestan360" rel="noreferrer" target='_blank'>lee</a>
         </span> and <span>
-        <a href={`${link1}`} rel="noreferrer" target='_blank'>realonbebeto</a>
+        <a href="https://github.com/realonbebeto" rel="noreferrer" target='_blank'>realonbebeto</a>
         </span>
     </p>
   </div>
