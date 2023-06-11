@@ -31,7 +31,7 @@ const ExperienceCard = ({ key, work }: Props) => {
           />
         </div> */}
         <div>
-          <div className="lg:flex lg:flex-row lg:justify-between md:flex-col">
+          <div className="lg:flex lg:flex-col lg:justify-between md:flex-col">
           <div>
           <span className="text-lg font-normal text-[#1DA1F2] sm:text-xl">
             {work.role}
