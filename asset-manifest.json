@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.7679a324.css",
-    "main.js": "/portfolio/static/js/main.023a5644.js",
+    "main.css": "/portfolio/static/css/main.fe208a63.css",
+    "main.js": "/portfolio/static/js/main.80893efd.js",
     "static/js/978.6bf17c4f.chunk.js": "/portfolio/static/js/978.6bf17c4f.chunk.js",
     "static/media/Apercu-Medium.svg": "/portfolio/static/media/Apercu-Medium.e88654454c626b784668.svg",
     "static/media/Apercu-Regular.svg": "/portfolio/static/media/Apercu-Regular.588f73fade0c7e517497.svg",
@@ -24,12 +24,12 @@
     "static/media/Apercu-Bold.woff2": "/portfolio/static/media/Apercu-Bold.e2eb70b384a9c39bef4b.woff2",
     "static/media/Apercu-Light.woff2": "/portfolio/static/media/Apercu-Light.2a0d58e904ad6f326f94.woff2",
     "index.html": "/portfolio/index.html",
-    "main.7679a324.css.map": "/portfolio/static/css/main.7679a324.css.map",
-    "main.023a5644.js.map": "/portfolio/static/js/main.023a5644.js.map",
+    "main.fe208a63.css.map": "/portfolio/static/css/main.fe208a63.css.map",
+    "main.80893efd.js.map": "/portfolio/static/js/main.80893efd.js.map",
     "978.6bf17c4f.chunk.js.map": "/portfolio/static/js/978.6bf17c4f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7679a324.css",
-    "static/js/main.023a5644.js"
+    "static/css/main.fe208a63.css",
+    "static/js/main.80893efd.js"
   ]
 }
