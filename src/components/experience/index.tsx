@@ -93,9 +93,9 @@ const ExperienceCard = ({ key, work }: Props) => {
         </div>
       </div>
       <div className="pt-5 ">
-        <span className="mt-1 text-sm font-thin flex flex-wrap">
+        <div className="mt-1 text-sm font-thin flex flex-wrap">
           <Skills skills={work.stack}></Skills>
-        </span>
+        </div>
       </div>
     </div>
   );
