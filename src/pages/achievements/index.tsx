@@ -8,7 +8,7 @@ const Achievements = () => {
     const achievementHeaderStyle = "text-2xl font-light text-[#1DA1F2]"
     // const trial = "flex flex-wrap justify-between"
     const achievementCardContainerStyle = "flex flex-wrap justify-between pt-5 gap-y-7"
-  return (
+  return (achievementsInfo.display) ? (
     <section className={achievementSectionStyle} id="achievements">
         <div className="w-auto">
           <h1 className={achievementHeaderStyle}>{achievementsInfo.title}</h1>
@@ -19,7 +19,7 @@ const Achievements = () => {
           ))}
         </div>
     </section>
-  )
+  ): null
 }
 
 export default Achievements
