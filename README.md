@@ -61,6 +61,24 @@ After you're done with setting up the website, you should host it online in a ho
 
 There are many hosting platforms and you should choose one that suits you.
 
+## Deploying to GitHub Pages
+To deploy your site to gthub pages, read on [Deploy React App to GitHub Pages](https://create-react-app.dev/docs/deployment/#github-pages) docs for react.
+
+Since your site needs to be updated often, you should configure GitHub Actions for your repo to use.
+
+## Configuring GitHub Actions
+The Profile and the Repository information from GitHub is only created at the time of deploy and the site needs to be redeployed if those information needs to be updated. So, a configurable [CRON Job](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#scheduled-events) is setup which deploys your site every week, so that once you update your profile on GitHub it is shown on your portfolio. You can also trigger it manually using ```workflow_dispatch``` event, see [this guide](https://github.blog/changelog/2020-07-06-github-actions-manual-triggers-with-workflow_dispatch/) on how to do that.
+
+   - When you are done with the configuration, we highly recommend to read through the  [GitHub Actions Configuring a workflow](https://docs.github.com/en/actions/using-workflows) docs.
+
+## FInally, deploy to GitHub Pages
+Guide to deploying to GitHub Pages
+- Navigate to ```package.json``` and enter your domain name instead of ```https://Leestan360.github.io/portfolio/``` in homepage variable. For example, if you want your site to be ```https://<your-username>.github.io/portfolio```, add the same to the homepage section of ```package.json```.
+- In short you can also add ```/portfolio``` to ```package.json``` as both are exactly same. Upon doing so, you tell ```create-react-app``` to add the path assets accordingly.
+- Optionally, configure the domain. You can configure a custom domain with GitHub Pages by adding a ```CNAME``` file to the ```public/``` folder.
+- Follow through the guide to setup GitHub pages from the official CRA docs [here](https://create-react-app.dev/docs/deployment/#github-pages).
+- Remember to create [secrets](https://docs.github.com/en/rest/actions/secrets?apiVersion=2022-11-28) in your repo where you'll store your secrets that'll be used to fetch your data from GitHub
+
 # Technologies Used
 1. [React](https://react.dev/)
 2. [TailwindCSS](https://tailwindcss.com/docs/guides/create-react-app)
