@@ -258,7 +258,7 @@ const bigProjectsInfo = {
         
       ],
       //  Only top 3 stack skills recommended here.
-      stack: ["Python", "JavaScript", "TypeScript"]
+      stack: ["Python", "JavaScript", "TypeScrip"]
     },
     {
       // image: require("./assets/images/nextuLogo.webp"),
@@ -271,7 +271,7 @@ const bigProjectsInfo = {
         }
       ],
       //  Only top 3 stack skills recommended here.
-      stack: ["Python", "JavaScript", "TypeScript"]
+      stack: ["Python", "JaxScript", "TypeScrip"]
     },
     {
       // image: require("./assets/images/saayaHealthLogo.webp"),
