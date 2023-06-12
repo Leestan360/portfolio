@@ -86,5 +86,5 @@ Guide to deploying to GitHub Pages
 
 
 # Project Maintainers
-1. Stanley Mayore [GitHub](https://github.com/Leestan360), [Twitter](https://twitter.com/MayoreStanley), [LinkedIn](https://www.linkedin.com/in/stanley-mayore/)
+1. Stanley Mayore [GitHub](https://github.com/Leestan360), [Twitter](https://twitter.com/MayoreStanley), [LinkedIn](https://www.linkedin.com/in/stanley-mayore/), [Portfolio](https://leestan360.github.io/stanleymayore/)
 2. Bebeto Nyamwamu [GitHub](https://github.com/realonbebeto), [Twitter](https://twitter.com/realonbebeto), [LinkedIn](https://www.linkedin.com/in/realonbebeto/), [Portfolio](https://realonbebeto.github.io)
